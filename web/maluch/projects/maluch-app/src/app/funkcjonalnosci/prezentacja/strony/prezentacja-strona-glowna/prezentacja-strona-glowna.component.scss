@@ -15,37 +15,197 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  h1{
+
+  h1 {
     font-size: 62px;
     font-weight: bold;
   }
-  p{
+
+  p {
     margin: 10px 0 40px;
     font-size: 14px;
-    color:#fff;
+    color: #fff;
   }
 }
 
-  .hero-btn{
-    display: inline-block;
-    text-decoration: none;
+.hero-btn-light {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid #333;
+    background: #333;
     color: #fff;
+    transition: 1s;
+  }
+}
+
+.hero-btn-dark {
+  display: inline-block;
+  text-decoration: none;
+  color: #333;
+  border: 1px solid #333;
+  padding: 8px 17px;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 10px;
+
+  &:hover {
     border: 1px solid #fff;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    &:hover{
-      border: 1px solid #333;
-      background: #333;
-      color: #fff;
-      transition: 1s;
-    }
+    background-color: #333;
+    transition: 1s;
+    color: #fff;
+  }
+}
+
+@media (max-width: 800px) {
+  .text-box h1 {
+    font-size: 32px;
+  }
+}
+
+//welcome
+.welcome-wrapper {
+  background-color: #fff;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.welcome {
+  width: 70%;
+  margin: auto;
+  text-align: left;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
   }
 
-  @media (max-width: 800px) {
-    .text-box h1{
-        font-size: 32px;
-    }
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    //text-align: right;
   }
+}
+
+@media (max-width: 800px) {
+  .welcome h1 {
+    font-size: 25px;
+  }
+}
+
+
+//course
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+}
+
+.row {
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 31%;
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+
+////rekrutacja
+.rekrutacja-wrapper {
+  background-color: #fff;
+  padding-bottom: 100px;
+}
+
+.rekrutacja {
+  width: 70%;
+  margin: auto;
+  //text-align: center;
+  padding-top: 100px;
+
+  h1 {
+    font-size: 62px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+  }
+}
+
+.rekrutacja-row {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.rekrutacja-col-33 {
+  flex-basis: 33%;
+}
+
+.rekrutacja-col-55 {
+  flex-basis: 55%;
+
+}
+
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column;
+  }
+
+}
+
+
