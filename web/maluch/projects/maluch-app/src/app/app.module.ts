@@ -1,9 +1,9 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { SzablonGlownyComponent } from './wspolne/szablony/szablon-glownwy/szablon-glowny.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {SzablonGlownyComponent} from './wspolne/szablony/szablon-glownwy/szablon-glowny.component';
 import {NawigacjaModule} from "./wspolne/nawigacja/nawigacja.module";
 
 @NgModule({
@@ -19,4 +19,5 @@ import {NawigacjaModule} from "./wspolne/nawigacja/nawigacja.module";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
