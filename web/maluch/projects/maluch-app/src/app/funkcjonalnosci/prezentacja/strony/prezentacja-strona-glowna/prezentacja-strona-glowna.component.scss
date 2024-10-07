@@ -1,3 +1,13 @@
+// Variables for color palette
+$primary-color: #0A303A;
+$accent-color: #f1c40f;
+$text-color: #333;
+$background-color: #fff;
+$highlight-color: #f39c12;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
+// Container setup
 .container {
   width: 80%;
   margin: 0 auto;
@@ -9,6 +19,7 @@
   flex-wrap: wrap;
 }
 
+// Button styles
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -16,43 +27,38 @@
   border-radius: 8px;
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &-light {
+    background-color: $primary-color;
+    color: $background-color;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $primary-color;
+      transform: translateY(-2px);
+    }
+  }
+
+  &-dark {
+    background-color: $background-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $background-color;
+    }
+  }
 }
 
-.btn-light {
-  background-color: #0A303A;
-  color: #fff;
-}
-
-.btn-light:hover {
-  background-color: #f1c40f;
-  color: #0A303A;
-  transform: translateY(-2px);
-}
-
-.btn-dark {
-  background-color: #fff;
-  color: #0A303A;
-  border: 1px solid #0A303A;
-}
-
-.btn-dark:hover {
-  background-color: #0A303A;
-  color: #fff;
-}
-
-.location-col .icon {
-  color: #f39c12;
+// Icon styles
+.icon {
   font-size: 40px;
-  margin-bottom: 10px;
-}
-.course .icon {
-  color: #f39c12;
-  font-size: 40px;
+  color: $highlight-color;
   margin-bottom: 10px;
 }
 
-
-/* Header Section */
+// Header section
 .header {
   min-height: 70vh;
   background: url("/assets/banner.png") center/cover no-repeat;
@@ -60,185 +66,172 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  .text-box {
+    text-align: center;
+    color: $background-color;
+    margin: auto;
+    width: 70%;
+
+    h1 {
+      font-size: 48px;
+      color: $accent-color;
+    }
+
+   h2 {
+      //font-size: 18px;
+      margin: 10px auto 40px;
+      //color:  $primary-color;
+    }
+  }
 }
 
-.text-box {
-  text-align: center;
-  color: #fff;
-}
-
-.text-box h1 {
-  font-size: 48px;
-  color: #f1c40f;
-}
-
-.text-box p {
-  font-size: 18px;
-  margin: 10px 0 40px;
-}
-
-/* Welcome Section */
+// Welcome section
 .welcome {
   padding: 150px 0;
-  background: #fff;
+  background: $background-color;
+
+  .welcome-content {
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
+  }
+
+  .welcome-left, .welcome-right {
+    flex: 2;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 42px;
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 18px;
+    color: $text-color;
+  }
 }
 
-.welcome-content {
-  display: flex;
-  //align-items: center;
-  justify-content: center;
-}
-
-.welcome-left {
-  flex: 2;
-  //text-align: right;
-}
-
-.welcome-right {
-  flex: 2;
-  padding-left: 50px;
-  text-align: left;
-}
-
-.welcome h1 {
-  font-size: 42px;
-  color: #0A303A;
-}
-
-.welcome p {
-  font-size: 18px;
-  color: #333;
-}
-
-
-/* Course Section */
+// Course section
 .course {
   padding: 60px 0;
   background: #f9f9f9;
+
+  h1 {
+    text-align: center;
+    font-size: 42px;
+    color: $primary-color;
+  }
+
+  p {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .course-col {
+    flex-basis: 30%;
+    background-color: $background-color;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px $shadow-color;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px $shadow-hover-color;
+    }
+  }
 }
 
-.course h1 {
-  text-align: center;
-  font-size: 42px;
-  color: #0A303A;
-}
-
-.course p {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-/* Course Cards */
-.course-col {
-  flex-basis: 30%;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.course-col:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Icons */
-.icon {
-  font-size: 40px;
-  color: #0A303A;
-  margin-bottom: 15px;
-}
-
-/* Our Locations Section */
+// Locations section
 .locations {
   padding: 60px 0;
   text-align: center;
-  //background: linear-gradient(to right, #f1c40f, #ffffff);
+  background: #fff;
+
+  h1 {
+    font-size: 42px;
+    color: $accent-color;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 18px;
+    color: $text-color;
+    line-height: 1.6;
+    margin-bottom: 40px;
+  }
+
+  .location-col {
+    flex-basis: 30%;
+    background-color: $background-color;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px $shadow-color;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 20px $shadow-hover-color;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    &:hover::before {
+      opacity: 1;
+    }
+  }
 }
 
-.locations h1 {
-  font-size: 42px;
-  color: #f1c40f;
-
-  margin-bottom: 20px;
-}
-
-.locations p {
-  font-size: 18px;
-  color: #333;
-  line-height: 1.6;
-  margin-bottom: 40px;
-}
-
-/* Location Cards */
-.location-col {
-  flex-basis: 30%;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-/* Hover Effect */
-.location-col:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* Icon Overlay Effect */
-.location-col::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  //background: rgba(255, 255, 255, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.location-col:hover::before {
-  opacity: 1;
-}
-
-/* Recruitment Section */
+// Recruitment section
 .recruitment {
   padding: 120px 0;
   text-align: center;
+  background: #fff;
+
+  h1 {
+    font-size: 42px;
+    color: $primary-color;
+  }
+
+  .recruitment-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      color: $text-color;
+      margin-bottom: 40px;
+    }
+  }
 }
 
-.recruitment h1 {
-  font-size: 42px;
-  color: #0A303A;
-}
-
-.recruitment-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.recruitment-content h2 {
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.recruitment-content p {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 40px;
-}
-
-/* Responsive Styles */
+// Responsive styles
 @media (max-width: 800px) {
   .location-col, .course-col {
-    flex-basis: 100%;
+    flex-basis: 100%  !important;
   }
 }

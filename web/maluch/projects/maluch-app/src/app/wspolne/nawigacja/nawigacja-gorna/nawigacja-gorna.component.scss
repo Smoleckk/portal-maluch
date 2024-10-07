@@ -4,7 +4,7 @@
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  background-color: #0A303A; /* Dark blue background */
+  background-color: #fff; /* Dark blue background */
   color: #fff; /* White text */
   width: 95%;
   margin: 20px auto;
@@ -109,6 +109,6 @@
 
   .navbar-links.active {
     display: flex;
-    background-color: #0A303A; /* Ensure the background is consistent in mobile view */
+    background-color: #fff; /* Ensure the background is consistent in mobile view */
   }
 }

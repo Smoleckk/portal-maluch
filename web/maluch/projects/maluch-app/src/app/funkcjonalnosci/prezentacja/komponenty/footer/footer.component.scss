@@ -1,9 +1,9 @@
 .footer {
   width: 100%;
-  background: linear-gradient(135deg, #0A303A, #2A4858);
+  //background: linear-gradient(135deg, #0A303A, #2A4858);
   padding: 50px 20px;
   border-radius: 8px;
-  color: #fff;
+  color: #0A303A;
 }
 
 .footer .footer-row {
@@ -33,7 +33,7 @@
 
 .footer-col ul li a {
   text-decoration: none;
-  color: #fff;
+  color: #0A303A;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
@@ -59,12 +59,8 @@
   border-radius: 6px;
   border: 1px solid #7489C6;
   background: none;
-  color: #fff;
+  color: #0A303A;
   outline: none;
-}
-
-.footer-col input::placeholder {
-  color: #ddd;
 }
 
 .footer-col button {
