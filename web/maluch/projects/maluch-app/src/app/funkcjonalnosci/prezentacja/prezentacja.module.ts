@@ -6,17 +6,22 @@ import {PrezentacjaStronaGlownaComponent} from './strony/prezentacja-strona-glow
 import {
   PrezentacjaStronaKontaktComponent
 } from './strony/prezentacja-strona-kontakt/prezentacja-strona-kontakt.component';
+import { FooterComponent } from './komponenty/footer/footer.component';
 
 
 @NgModule({
-  declarations: [
-    PrezentacjaStronaGlownaComponent,
-    PrezentacjaStronaKontaktComponent,
-  ],
-  imports: [
-    CommonModule,
-    PrezentacjaRoutingModule
-  ]
+    declarations: [
+        PrezentacjaStronaGlownaComponent,
+        PrezentacjaStronaKontaktComponent,
+        FooterComponent,
+    ],
+    exports: [
+        FooterComponent
+    ],
+    imports: [
+        CommonModule,
+        PrezentacjaRoutingModule
+    ]
 })
 export class PrezentacjaModule {
 }

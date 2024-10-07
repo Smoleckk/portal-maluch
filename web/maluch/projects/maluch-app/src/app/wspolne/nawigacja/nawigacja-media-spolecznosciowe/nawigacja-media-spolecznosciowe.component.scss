@@ -1,9 +1,10 @@
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #fff;
-  color: #0A303A;
+  background-color: #0A303A; /* Dark blue background */
+  color: #fff; /* White text */
   width: 100%;
   max-width: 340px;
   height: 60px;
@@ -15,22 +16,31 @@
   right: 50px;
   z-index: 100;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease; /* Smooth transitions */
 }
 
-.social-media-icons, .language-selection {
+/* Social Media Icons and Language Selection */
+.social-media-icons,
+.language-selection {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* Social Media Icons */
 .social-media-icons span {
   font-size: 24px;
-  color: #0A303A;
+  color: #f1c40f; /* Golden color for icons */
   margin-right: 10px;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
+.social-media-icons span:hover {
+  color: #fff; /* White on hover */
+}
+
+/* Language Selection */
 .language-selection {
   display: flex;
   gap: 10px;
@@ -39,13 +49,18 @@
 .language-selection span {
   font-size: 18px;
   cursor: pointer;
-  color: #0A303A;
+  color: #f1c40f; /* Golden color for language icons */
   transition: color 0.3s ease;
 }
 
+.language-selection span:hover {
+  color: #fff; /* White on hover */
+}
+
+/* Divider */
 .divider {
   font-size: 18px;
-  color: #0A303A;
+  color: #fff; /* White divider */
 }
 
 /* Responsive Styles */
@@ -57,6 +72,8 @@
     right: 10px;
     flex-direction: column;
     height: auto;
+    background-color: #f1c40f; /* Switch to golden background on smaller screens */
+    color: #0A303A; /* Dark blue text */
   }
 
   .social-media-icons,
@@ -71,6 +88,7 @@
   .language-selection span {
     font-size: 20px;
     margin-right: 0;
+    color: #0A303A; /* Dark blue icons on golden background */
   }
 
   .divider {

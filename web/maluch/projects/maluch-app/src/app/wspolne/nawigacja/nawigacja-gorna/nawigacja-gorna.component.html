@@ -1,5 +1,9 @@
 <nav class="navbar">
-  <div class="brand-title">Brand Name</div>
+  <div class="brand-title">
+    <img src="/assets/logo123.png" alt="L" class="logo">
+    Gwiazdeczka
+  </div>
+
   <a class="toggle-button" (click)="toggleNavbar()">
     <span class="bar"></span>
     <span class="bar"></span>
@@ -8,9 +12,26 @@
 
   <div class="navbar-links" [ngClass]="{'active': isNavbarActive}">
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="#">Strona Główna</a></li>
+      <li><a href="#">O nas</a></li>
+      <li><a href="#">Nasza Kadra</a></li>
+      <li><a href="#">Oferta</a></li>
+      <li><a href="#">Galeria</a></li>
+      <li><a href="#">Rodzice</a></li>
+      <li><a href="#">Kontakt</a></li>
+    </ul>
+  </div>
+
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-youtube"></i></a>
+  </div>
+
+  <div class="navbar-links">
+    <ul>
+    <li><a href="#">Dni otwarte</a></li>
+    <li><a href="#">Umów wizyte</a></li>
     </ul>
   </div>
 </nav>

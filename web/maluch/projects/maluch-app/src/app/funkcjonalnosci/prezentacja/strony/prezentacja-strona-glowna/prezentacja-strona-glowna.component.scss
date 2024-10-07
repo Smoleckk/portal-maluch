@@ -1,3 +1,4 @@
+/* Header */
 .header {
   min-height: 70vh;
   width: 100%;
@@ -8,45 +9,46 @@
   position: relative;
 }
 
-
+/* Text Box (Hero Section) */
 .text-box {
   width: 90%;
-  //color: #fff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
 
   h1 {
-    font-size: 62px;
+    font-size: 48px; /* More standard size */
     font-weight: bold;
+    color: #f1c40f; /* Golden color */
+    line-height: 1.2; /* Improved readability */
   }
 
   p {
     margin: 10px 0 40px;
     font-size: 18px;
-    //color: #fff;
+    color: #fff;
+    line-height: 1.6; /* Better text spacing */
   }
 }
 
+/* Hero Buttons */
 .hero-btn-light {
   display: inline-block;
   text-decoration: none;
   color: #fff;
-  //border: 1px solid #fff;
   padding: 12px 24px;
-  font-size: 13px;
+  font-size: 16px; /* Larger button text */
   background: #0A303A;
-  position: relative;
-  cursor: pointer;
   border-radius: 10px;
+  transition: all 0.3s ease;
 
   &:hover {
-    border: 1px solid #0A303A;
-    background: #0A303A;
-    color: #fff;
-    transition: 1s;
+    background: #f1c40f;
+    color: #0A303A;
+    transition: 0.5s;
   }
 }
 
@@ -58,30 +60,28 @@
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
-  position: relative;
-  cursor: pointer;
   background: #fff;
   border-radius: 10px;
+  transition: all 0.3s ease;
 
   &:hover {
-    border: 1px solid #fff;
     background-color: #0A303A;
-    transition: 1s;
     color: #fff;
+    transition: 0.5s;
   }
 }
 
+/* Responsive adjustments for text-box */
 @media (max-width: 800px) {
   .text-box h1 {
     font-size: 32px;
   }
 }
 
-//welcome
+/* Welcome Section */
 .welcome-wrapper {
   background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 50px 0 100px;
 }
 
 .welcome {
@@ -90,16 +90,17 @@
   text-align: left;
 
   h1 {
-    font-size: 52px;
+    font-size: 42px; /* More standard size */
     font-weight: 600;
+    color: #0A303A; /* Dark blue for headings */
   }
 
   p {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 1.6;
     padding: 10px 0;
-    //text-align: right;
+    color: #333;
   }
 }
 
@@ -113,24 +114,24 @@
   }
 }
 
-
-//course
+/* Course Section */
 .course {
   width: 80%;
   margin: auto;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding: 50px 0 100px;
 
   h1 {
-    font-size: 52px;
+    font-size: 42px;
     font-weight: 600;
+    color: #f1c40f;
   }
 
   p {
     font-size: 18px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 1.6;
+    color: #333;
     padding: 10px;
   }
 }
@@ -150,41 +151,39 @@
   box-sizing: border-box;
   transition: 0.5s;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
   h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
+    color: #0A303A;
   }
 
   &:hover {
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   }
 
   span {
-    font-size: 35px;
-    color: #0A303A;
+    font-size: 30px;
+    color: #f1c40f;
     margin-bottom: 15px;
   }
 }
 
 @media (max-width: 800px) {
-  .course {
-    h1 {
-      font-size: 32px;
-    }
+  .course h1 {
+    font-size: 32px;
   }
   .row {
     flex-direction: column;
   }
 }
 
-
-////rekrutacja
+/* Recruitment Section */
 .rekrutacja-wrapper {
-  background-color: #fff;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  background-color: #f8f9fa;
+  padding: 50px 0 100px;
 }
 
 .rekrutacja {
@@ -192,13 +191,16 @@
   margin: auto;
 
   h1 {
-    font-size: 62px;
+    font-size: 48px; /* Standardized size */
     font-weight: bold;
+    color: #0A303A;
   }
+
   p {
     font-size: 18px;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 1.6;
+    color: #333;
     padding: 10px;
   }
 }
@@ -207,7 +209,6 @@
   margin-top: 5px;
   display: flex;
   justify-content: center;
-
 }
 
 .rekrutacja-col-33 {
@@ -219,6 +220,21 @@
 }
 
 @media (max-width: 800px) {
+  .rekrutacja h1 {
+    font-size: 32px;
+  }
+
+  .rekrutacja-col-33 {
+    display: none;
+  }
+
+  .rekrutacja-col-55 {
+    flex-basis: 100%;
+  }
+}
+
+/* Global adjustments for row */
+@media (max-width: 800px) {
   .row {
     flex-direction: column;
   }
@@ -226,7 +242,7 @@
     h1 {
       font-size: 32px;
     }
-    h2{
+    h2 {
       font-size: 25px;
     }
   }
@@ -234,8 +250,6 @@
     display: none;
   }
   .rekrutacja-col-55 {
-    flex-basis: 100%
+    flex-basis: 100%;
   }
 }
-
-
