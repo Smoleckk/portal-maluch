@@ -1,255 +1,296 @@
-/* Header */
-.header {
-  min-height: 70vh;
-  width: 100%;
-  //background-image: linear-gradient(rgba(129, 118, 118, 0.5), rgba(124, 119, 119, 0.5)), url("/assets/banner.png");
-  background-image: url("/assets/banner.png");
-  background-size: cover;
-  background-position: center;
-  position: relative;
+
+/* Utility Classes */
+.container {
+  width: 80%;
+  margin: 0 auto;
 }
 
-/* Text Box (Hero Section) */
-.text-box {
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-
-  h1 {
-    font-size: 48px; /* More standard size */
-    font-weight: bold;
-    color: #f1c40f; /* Golden color */
-    line-height: 1.2; /* Improved readability */
-  }
-
-  p {
-    margin: 10px 0 40px;
-    font-size: 18px;
-    color: #fff;
-    line-height: 1.6; /* Better text spacing */
-  }
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-/* Hero Buttons */
-.hero-btn-light {
+.btn {
   display: inline-block;
-  text-decoration: none;
-  color: #fff;
-  padding: 12px 24px;
-  font-size: 16px; /* Larger button text */
-  background: #0A303A;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background: #f1c40f;
-    color: #0A303A;
-    transition: 0.5s;
-  }
-}
-
-.hero-btn-dark {
-  display: inline-block;
-  text-decoration: none;
-  color: #0A303A;
-  border: 1px solid #0A303A;
   padding: 12px 24px;
   font-size: 16px;
-  font-weight: bold;
-  background: #fff;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-
-  &:hover {
-    background-color: #0A303A;
-    color: #fff;
-    transition: 0.5s;
-  }
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-/* Responsive adjustments for text-box */
-@media (max-width: 800px) {
-  .text-box h1 {
-    font-size: 32px;
-  }
+.btn-light {
+  background-color: #0A303A;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #f1c40f;
+  color: #0A303A;
+  transform: translateY(-3px);
+}
+
+.btn-dark {
+  background-color: #fff;
+  color: #0A303A;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: 1px solid #0A303A;
+
+}
+
+.btn-dark:hover {
+  background-color: #0A303A;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+/* Header Section */
+.header {
+  min-height: 70vh;
+  background: url("/assets/banner.png") center/cover no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-box {
+  text-align: center;
+  color: #fff;
+}
+
+.text-box h1 {
+  font-size: 48px;
+  color: #f1c40f;
+}
+
+.text-box p {
+  font-size: 18px;
+  margin: 10px 0 40px;
 }
 
 /* Welcome Section */
-.welcome-wrapper {
-  background-color: #fff;
-  padding: 50px 0 100px;
-}
-
 .welcome {
-  width: 60%;
-  margin: auto;
-  text-align: left;
-
-  h1 {
-    font-size: 42px; /* More standard size */
-    font-weight: 600;
-    color: #0A303A; /* Dark blue for headings */
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.6;
-    padding: 10px 0;
-    color: #333;
-  }
+  padding: 60px 0;
+  text-align: center;
 }
 
-@media (max-width: 800px) {
-  .welcome {
-    width: 80%;
+.welcome h1 {
+  font-size: 42px;
+  color: #0A303A;
+}
 
-    h1 {
-      font-size: 32px;
-    }
-  }
+.welcome p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 /* Course Section */
 .course {
-  width: 80%;
-  margin: auto;
+  padding: 60px 0;
   text-align: center;
-  padding: 50px 0 100px;
-
-  h1 {
-    font-size: 42px;
-    font-weight: 600;
-    color: #f1c40f;
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.6;
-    color: #333;
-    padding: 10px;
-  }
 }
 
-.row {
-  margin-top: 5px;
-  display: flex;
-  justify-content: space-between;
+.course h1 {
+  font-size: 42px;
+  color: #f1c40f;
+}
+
+.course p {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
 }
 
 .course-col {
   flex-basis: 31%;
-  background: #fff;
+  background-color: #fff;
   border-radius: 10px;
-  margin-bottom: 5%;
-  padding: 20px 12px;
-  box-sizing: border-box;
-  transition: 0.5s;
-  cursor: pointer;
+  padding: 20px;
+  margin-bottom: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
-  h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    color: #0A303A;
-  }
-
-  &:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-
-  span {
-    font-size: 30px;
-    color: #f1c40f;
-    margin-bottom: 15px;
-  }
+  transition: box-shadow 0.3s ease;
+  text-align: center;
 }
 
-@media (max-width: 800px) {
-  .course h1 {
-    font-size: 32px;
-  }
-  .row {
-    flex-direction: column;
-  }
+.course-col h3 {
+  font-size: 24px;
+  color: #0A303A;
+  margin-bottom: 15px;
 }
 
-/* Recruitment Section */
-.rekrutacja-wrapper {
+.course-col p {
+  font-size: 16px;
+  color: #333;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+  font-size: 40px;
+  color: #f1c40f;
+  margin-bottom: 10px;
+}
+/* Our Locations Section */
+.locations {
+  padding: 60px 0;
+  text-align: center;
   background-color: #f8f9fa;
-  padding: 50px 0 100px;
 }
 
-.rekrutacja {
-  width: 70%;
-  margin: auto;
-
-  h1 {
-    font-size: 48px; /* Standardized size */
-    font-weight: bold;
-    color: #0A303A;
-  }
-
-  p {
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.6;
-    color: #333;
-    padding: 10px;
-  }
+.locations h1 {
+  font-size: 42px;
+  color: #0A303A;
+  margin-bottom: 20px;
 }
 
-.rekrutacja-row {
-  margin-top: 5px;
-  display: flex;
-  justify-content: center;
+.locations p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 40px;
 }
 
-.rekrutacja-col-33 {
-  flex-basis: 33%;
+/* Location Cards */
+.location-col {
+  flex-basis: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
-.rekrutacja-col-55 {
-  flex-basis: 55%;
+/* Hover Effect */
+.location-col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* Title Style */
+.location-col h3 {
+  font-size: 24px;
+  color: #0A303A;
+  margin-bottom: 10px;
+}
+
+/* Description Style */
+.location-col p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Icon Overlay Effect */
+.location-col::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.location-col:hover::before {
+  opacity: 1;
+}
+
+/* Button Style */
+.btn-light {
+  background-color: #0A303A;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-light:hover {
+  background-color: #f1c40f;
+  color: #0A303A;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
 @media (max-width: 800px) {
-  .rekrutacja h1 {
-    font-size: 32px;
-  }
-
-  .rekrutacja-col-33 {
-    display: none;
-  }
-
-  .rekrutacja-col-55 {
+  .location-col {
     flex-basis: 100%;
   }
 }
 
-/* Global adjustments for row */
+/* Recruitment Section */
+.recruitment {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.recruitment h1 {
+  font-size: 48px;
+  color: #0A303A;
+  margin-bottom: 20px;
+}
+
+.recruitment-content {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.recruitment-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.recruitment-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive */
 @media (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+
+  .text-box h1 {
+    font-size: 32px;
+  }
+
+  .welcome h1,
+  .course h1,
+  .recruitment h1 {
+    font-size: 32px;
+  }
+
   .row {
     flex-direction: column;
   }
-  .rekrutacja {
-    h1 {
-      font-size: 32px;
-    }
-    h2 {
-      font-size: 25px;
-    }
-  }
-  .rekrutacja-col-33 {
-    display: none;
-  }
-  .rekrutacja-col-55 {
+
+  .course-col {
     flex-basis: 100%;
   }
 }
