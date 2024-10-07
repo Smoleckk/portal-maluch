@@ -1,3 +1,14 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
 
 /* Utility Classes */
 .container {
@@ -17,41 +28,29 @@
   font-size: 16px;
   border-radius: 8px;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-light {
   background-color: #0A303A;
   color: #fff;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn-light:hover {
   background-color: #f1c40f;
   color: #0A303A;
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
 
 .btn-dark {
   background-color: #fff;
   color: #0A303A;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
   border: 1px solid #0A303A;
-
 }
 
 .btn-dark:hover {
   background-color: #0A303A;
   color: #fff;
-  transform: translateY(-3px);
 }
 
 /* Header Section */
@@ -83,6 +82,7 @@
 .welcome {
   padding: 60px 0;
   text-align: center;
+  //background: linear-gradient(to left, #f1c40f, #ffffff);
 }
 
 .welcome h1 {
@@ -93,63 +93,54 @@
 .welcome p {
   font-size: 18px;
   color: #333;
-  line-height: 1.6;
-  margin-bottom: 20px;
 }
 
 /* Course Section */
 .course {
   padding: 60px 0;
-  text-align: center;
+  background: #f9f9f9;
 }
 
 .course h1 {
+  text-align: center;
   font-size: 42px;
-  color: #f1c40f;
+  color: #0A303A;
 }
 
 .course p {
-  font-size: 18px;
-  color: #333;
+  text-align: center;
   margin-bottom: 40px;
 }
 
+/* Course Cards */
 .course-col {
-  flex-basis: 31%;
+  flex-basis: 30%;
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  margin: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.course-col h3 {
-  font-size: 24px;
+.course-col:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.icon {
+  font-size: 40px;
   color: #0A303A;
   margin-bottom: 15px;
 }
 
-.course-col p {
-  font-size: 16px;
-  color: #333;
-}
-
-.course-col:hover {
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.icon {
-  font-size: 40px;
-  color: #f1c40f;
-  margin-bottom: 10px;
-}
 /* Our Locations Section */
 .locations {
   padding: 60px 0;
   text-align: center;
-  background-color: #f8f9fa;
+  //background: linear-gradient(to right, #f1c40f, #ffffff);
 }
 
 .locations h1 {
@@ -184,19 +175,6 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Title Style */
-.location-col h3 {
-  font-size: 24px;
-  color: #0A303A;
-  margin-bottom: 10px;
-}
-
-/* Description Style */
-.location-col p {
-  font-size: 16px;
-  color: #333;
-}
-
 /* Icon Overlay Effect */
 .location-col::before {
   content: '';
@@ -205,7 +183,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.5);
+  //background: rgba(255, 255, 255, 0.5);
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -214,83 +192,36 @@
   opacity: 1;
 }
 
-/* Button Style */
-.btn-light {
-  background-color: #0A303A;
-  color: #fff;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn-light:hover {
-  background-color: #f1c40f;
-  color: #0A303A;
-  transform: translateY(-3px);
-}
-
-/* Responsive */
-@media (max-width: 800px) {
-  .location-col {
-    flex-basis: 100%;
-  }
-}
-
 /* Recruitment Section */
 .recruitment {
   padding: 60px 0;
-  background-color: #f8f9fa;
   text-align: center;
 }
 
 .recruitment h1 {
-  font-size: 48px;
+  font-size: 42px;
   color: #0A303A;
-  margin-bottom: 20px;
 }
 
 .recruitment-content {
-  width: 70%;
+  max-width: 800px;
   margin: 0 auto;
-  text-align: center;
 }
 
 .recruitment-content h2 {
-  font-size: 32px;
-  margin-bottom: 15px;
-  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .recruitment-content p {
   font-size: 18px;
-  margin-bottom: 30px;
-  line-height: 1.6;
   color: #333;
+  margin-bottom: 40px;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 800px) {
-  .container {
-    width: 90%;
-  }
-
-  .text-box h1 {
-    font-size: 32px;
-  }
-
-  .welcome h1,
-  .course h1,
-  .recruitment h1 {
-    font-size: 32px;
-  }
-
-  .row {
-    flex-direction: column;
-  }
-
-  .course-col {
+  .location-col, .course-col {
     flex-basis: 100%;
   }
 }
