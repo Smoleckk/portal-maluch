@@ -8,6 +8,7 @@
   max-width: 340px;
   height: 60px;
   margin: 0 auto;
+  padding: 0 20px;
   border-radius: 20px;
   position: fixed;
   bottom: 50px;
@@ -16,12 +17,12 @@
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.social-media-icons .language-selection{
+.social-media-icons, .language-selection {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+
 .social-media-icons span {
   font-size: 24px;
   color: #0A303A;
@@ -29,7 +30,6 @@
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
 
 .language-selection {
   display: flex;
@@ -48,19 +48,32 @@
   color: #0A303A;
 }
 
+/* Responsive Styles */
 @media (max-width: 800px) {
   .navbar {
-    width: 90%;
+    width: 50px;
     padding: 10px;
     bottom: 10px;
+    right: 10px;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .social-media-icons,
+  .language-selection {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
   }
 
   .social-media-icons span,
   .language-selection span {
-    font-size: 22px;
+    font-size: 20px;
+    margin-right: 0;
   }
 
   .divider {
-    font-size: 16px;
+    display: none;
   }
 }
