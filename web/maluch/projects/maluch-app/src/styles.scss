@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+$primary-color: #0A303A;
+$accent-color: #f1c40f;
+$text-color: #333;
+$background-color: #fff;
+$highlight-color: #f39c12;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$shadow-hover-color: rgba(0, 0, 0, 0.2);
 
 html, body {
   height: 100%;
@@ -13,4 +20,34 @@ html, body {
   font-family: 'Indie Flower', cursive;
   margin: 0;
   padding: 0;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &-light {
+    background-color: $accent-color;
+    color: $background-color;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $primary-color;
+      transform: translateY(-2px);
+    }
+  }
+
+  &-dark {
+    background-color: $background-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $background-color;
+    }
+  }
 }
