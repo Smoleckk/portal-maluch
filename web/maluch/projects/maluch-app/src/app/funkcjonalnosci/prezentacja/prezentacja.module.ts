@@ -7,6 +7,8 @@ import {
   PrezentacjaStronaKontaktComponent
 } from './strony/prezentacja-strona-kontakt/prezentacja-strona-kontakt.component';
 import { FooterComponent } from './komponenty/footer/footer.component';
+import { HeaderComponent } from './komponenty/header/header.component';
+import { SubHeaderComponent } from './komponenty/sub-header/sub-header.component';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { FooterComponent } from './komponenty/footer/footer.component';
         PrezentacjaStronaGlownaComponent,
         PrezentacjaStronaKontaktComponent,
         FooterComponent,
+        HeaderComponent,
+        SubHeaderComponent,
     ],
     exports: [
         FooterComponent
