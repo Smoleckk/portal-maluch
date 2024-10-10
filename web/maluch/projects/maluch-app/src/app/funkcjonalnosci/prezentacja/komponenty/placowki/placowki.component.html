@@ -1,1 +1,57 @@
-<p>placowki works!</p>
+<section [style]="kolorTla" class="locations">
+  <div class="container">
+    <h1>Placówki</h1>
+    <p>Przedszkole Gwiazdeczka to sieć przyjaznych i inspirujących miejsc, gdzie dzieci mogą rozwijać swoje talenty.
+      Każda placówka oferuje wyjątkowe programy edukacyjne oraz pełne zaangażowanie w rozwój emocjonalny i społeczny
+      maluchów. Oto nasze lokalizacje:</p>
+    <div class="row">
+      <div class="location-col">
+        <span class="icon material-symbols-outlined">place</span>
+        <h3>Placówka Kraśnik Fabryczny</h3>
+        <p>Nasza główna placówka, znajdująca się w sercu miasta, oferuje bogaty program zajęć oraz doskonałe warunki do
+          nauki.</p>
+        <p><strong>Adres:</strong> Grunwaldzka 4A, 23-204 Kraśnik</p>
+        <div class="map-container">
+          <iframe *ngIf="czyWyswietlicMapy"
+                  allowfullscreen=""
+                  height="250"
+                  loading="lazy"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.740800328914!2d22.16237091332707!3d50.96549637157707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722e97d3ff71fab%3A0xe4c7d4bcef78afc4!2zWmVzcMOzxYIgUHJ6ZWRzemtvbGkgaSDFu8WCb2Jrw7N3IEdXSUFaREVDWktB!5e0!3m2!1spl!2spl!4v1728577773133!5m2!1spl!2spl"
+                  style="border:0;"
+                  title="Placowka Fabryczny"
+                  width="100%"></iframe>
+        </div>
+      </div>
+      <div class="location-col">
+        <span class="icon material-symbols-outlined">place</span>
+        <h3>Placówka Kraśnik Stary</h3>
+        <p>Placówka wschodnia to spokojne miejsce otoczone zielenią, idealne dla dzieci ceniących sobie bliskość
+          natury.</p>
+        <p><strong>Adres:</strong> Mieszka I 16, 23-200 Kraśnik</p>
+        <iframe *ngIf="czyWyswietlicMapy"
+                allowfullscreen=""
+                height="250"
+                loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2512.740800328914!2d22.16237091332707!3d50.96549637157707!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722e97d3ff71fab%3A0xe4c7d4bcef78afc4!2zWmVzcMOzxYIgUHJ6ZWRzemtvbGkgaSDFu8WCb2Jrw7N3IEdXSUFaREVDWktB!5e0!3m2!1spl!2spl!4v1728577773133!5m2!1spl!2spl"
+                style="border:0;"
+                title="Placowka Stary"
+                width="100%"></iframe>
+      </div>
+      <div class="location-col">
+        <span class="icon material-symbols-outlined">place</span>
+        <h3>Placówka Janow Lubelski</h3>
+        <p>Znajdująca się w dynamicznie rozwijającej się dzielnicy, ta placówka oferuje nowoczesne zaplecze
+          edukacyjne.</p>
+        <p><strong>Adres:</strong> Świerdzowa 4, 23-300 Janów Lubelski</p>
+        <iframe *ngIf="czyWyswietlicMapy"
+                allowfullscreen=""
+                height="250"
+                loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3573.5090744071795!2d22.404516136659453!3d50.70412167719934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472327c61e55d81b%3A0xdc237f0e603585d7!2sPrzedszkole%20Niepubliczne!5e0!3m2!1spl!2spl!4v1728578107042!5m2!1spl!2spl"
+                style="border:0;"
+                title="Placowka Janow"
+                width="100%"></iframe>
+      </div>
+    </div>
+  </div>
+</section>

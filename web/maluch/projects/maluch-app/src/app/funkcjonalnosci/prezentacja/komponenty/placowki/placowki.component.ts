@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-placowki',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./placowki.component.scss']
 })
 export class PlacowkiComponent {
+  @Input() kolorTla = '';
+  @Input() czyWyswietlicMapy = false;
+
 
 }
