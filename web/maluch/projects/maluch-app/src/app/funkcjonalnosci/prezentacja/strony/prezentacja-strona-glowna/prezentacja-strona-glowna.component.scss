@@ -283,12 +283,45 @@ p {
 
 .karta-sekcja {
   padding: 20px 0;
-  //background-color: #f7f7f7;
   display: flex;
   flex-direction: row;
+  margin: 0 auto;
+
+  .karta-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .karta-img {
+    //flex: 1; /* Sprawia, że obraz zajmuje odpowiednią przestrzeń */
+    max-width: 100%; /* Umożliwia pełne wykorzystanie dostępnej szerokości dla obrazów */
+    //margin: 10px; /* Margines dla estetyki */
+  }
+
+  .karta-img img {
+    max-width: 100%; /* Obraz nie przekroczy szerokości kontenera */
+    height: auto;    /* Wysokość będzie dostosowywana automatycznie */
+    border-radius: 20px;
+    object-fit: cover; /* Przycięcie obrazu, aby wypełniał kontener */
+    max-width: 100%; /* Ustalamy szerokość obrazu na start */
+    height: 400px; /* Ustalamy wysokość obrazu na start */
+  }
+
+  //.img1 {
+  //  height: 500px;
+  //  border-radius: 20px;
+  //}
+  //
+  //.img2 {
+  //  height: 100px;
+  //  width: 100px;
+  //  border-radius: 20px;
+  //}
 
   .karta {
-    width: 700px;
+    max-width: 700px;
     background-color: $background-color;
     border-radius: 20px 0 20px 0;
     padding: 30px;
@@ -318,8 +351,70 @@ p {
     }
   }
 }
-@media (max-width: 800px) {
-  .location-col, .course-col {
-    flex-basis: 100% !important;
+.float-layout {
+  padding: 5px 5px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.card-container {
+  overflow: hidden;
+}
+
+.card {
+  max-width: 700px;
+  background-color: $background-color;
+  border-radius:  10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lekkie, eleganckie cieniowanie */
+  position: relative;
+  overflow: hidden;
+}
+
+.card-title {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.card-desc {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/*add this it*/
+.card-image {
+  display: flex;
+  align-items: center;
+}
+/*-------------*/
+
+div.card-image img {
+  width: 50%;
+  height: 400px;
+  border-radius:  10px;
+}
+
+/* Phone Devices Query */
+@media (max-width: 768px) {
+  div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /*add this it*/
+  .card-image {
+    flex-direction: column;
+  }
+  /*----------------------*/
+
+  .card {
+    width: 100%;
+    margin-top: -4px;
   }
 }
