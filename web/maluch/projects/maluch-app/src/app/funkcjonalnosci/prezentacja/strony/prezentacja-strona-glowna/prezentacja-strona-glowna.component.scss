@@ -20,13 +20,37 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   }
 }
 
-.row {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+  &-light {
+    background-color: $primary-color;
+    color: $background-color;
+
+    &:hover {
+      background-color: $accent-color;
+      color: $primary-color;
+      transform: translateY(-2px);
+    }
+  }
+
+  &-dark {
+    background-color: $background-color;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $background-color;
+    }
+  }
 }
-
-
 
 // Icon styles
 .icon {
@@ -93,11 +117,6 @@ ul {
     h1 {
       margin: 20px;
     }
-
-    //h3 {
-    //  margin: 10px auto 40px;
-    //  max-width: 600px;
-    //}
   }
 }
 
@@ -180,7 +199,7 @@ ul {
       padding: 20px;
 
       &:hover {
-        transform: scale(1.1); // Powiększenie ikony przy najechaniu
+        transform: scale(1.1);
       }
     }
   }
@@ -206,7 +225,12 @@ ul {
 .locations {
   padding: 60px 0;
   text-align: center;
-  //background: $background-color;
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
   h1 {
     color: $accent-color;
@@ -309,14 +333,11 @@ ul {
   font-size: 18px;
 }
 
-/*add this it*/
 .card-image {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-/*-------------*/
 
 div.card-image img {
   width: 50%;
@@ -325,21 +346,18 @@ div.card-image img {
   border-radius: 10px;
 }
 
-/* Phone Devices Query */
 @media (max-width: 768px) {
   div.card-image img {
     width: 100%;
     height: auto;
   }
 
-  /*add this it*/
   .card-image-left {
     flex-direction: column;
   }
   .card-image-right {
     flex-direction: column-reverse;
   }
-  /*----------------------*/
 
   .card {
     width: 100%;
