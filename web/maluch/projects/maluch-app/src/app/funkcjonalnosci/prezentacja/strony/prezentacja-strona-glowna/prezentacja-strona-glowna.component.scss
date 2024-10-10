@@ -73,6 +73,7 @@ p {
   margin: 20px auto;
   line-height: 1.6;
 }
+
 @media (max-width: 800px) {
   h1 {
     font-size: 36px;
@@ -91,6 +92,7 @@ p {
     line-height: 1.6;
   }
 }
+
 .header {
   min-height: 80vh;
   background: url("/assets/banner.png") center/cover no-repeat;
@@ -220,7 +222,7 @@ p {
 .locations {
   padding: 60px 0;
   text-align: center;
-  background: #fff;
+  background: $background-color;
 
   h1 {
     color: $accent-color;
@@ -263,7 +265,7 @@ p {
 .recruitment {
   padding: 60px 0;
   text-align: center;
-  background: #fff;
+  background: $background-color;
 
   .recruitment-content {
     max-width: 800px;
@@ -275,5 +277,43 @@ p {
 @media (max-width: 800px) {
   .location-col, .course-col {
     flex-basis: 100% !important;
+  }
+}
+
+.karta-sekcja {
+  padding: 20px 0;
+  background-color: #f7f7f7;
+
+  .karta {
+    width: 70%;
+    max-width: 700px;
+    background-color: $background-color;
+    border-radius: 20px 0 20px 0;
+    padding: 30px;
+    //margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lekkie, eleganckie cieniowanie */
+    position: relative;
+    overflow: hidden;
+
+
+    h1 {
+      color: $accent-color
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        padding: 10px 0;
+        border-bottom: 1px solid #ececec;
+
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
   }
 }
