@@ -19,7 +19,6 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   flex-wrap: wrap;
 }
 
-// Button styles
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -58,7 +57,40 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   margin-bottom: 10px;
 }
 
-// Header section
+h1 {
+  font-size: 42px;
+  color: $primary-color;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  color: $text-color;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 36px;
+    color: $primary-color;
+  }
+
+  h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 16px;
+    color: $text-color;
+    margin: 20px auto;
+    line-height: 1.6;
+  }
+}
 .header {
   min-height: 80vh;
   background: url("/assets/banner.png") center/cover no-repeat;
@@ -74,12 +106,12 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     width: 70%;
 
     h1 {
-      font-size: 48px;
       color: $accent-color;
     }
 
-    h2 {
+    p {
       margin: 10px auto 40px;
+      color: $background-color;
     }
   }
 }
@@ -104,18 +136,6 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   .welcome-right {
     width: 50%;
   }
-
-  h1 {
-    font-size: 42px;
-    color: $primary-color;
-  }
-
-  p {
-    font-size: 18px;
-    color: $text-color;
-    margin: 20px auto;
-
-  }
 }
 
 @media (max-width: 800px) {
@@ -136,18 +156,8 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   padding: 60px 0;
   text-align: center;
 
-  h1 {
-    font-size: 42px;
-    color: $primary-color;
-    margin-bottom: 20px;
-  }
-
   p {
-    font-size: 18px;
-    color: $text-color;
     max-width: 600px;
-    margin: 20px auto;
-    line-height: 1.6;
   }
 
   .row {
@@ -175,8 +185,8 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     }
 
     img {
-      width: 220px;
-      height: 220px;
+      width: 180px;
+      height: 180px;
       transition: transform 0.3s ease;
     }
 
@@ -197,6 +207,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
       text-align: center;
 
       flex-direction: column;
+
       img {
         width: 280px;
         height: 280px;
@@ -206,23 +217,13 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 }
 
 
-// Locations section
 .locations {
   padding: 60px 0;
   text-align: center;
   background: #fff;
 
   h1 {
-    font-size: 42px;
     color: $accent-color;
-    margin-bottom: 20px;
-  }
-
-  p {
-    font-size: 18px;
-    color: $text-color;
-    line-height: 1.6;
-    margin-bottom: 40px;
   }
 
   .location-col {
@@ -264,29 +265,13 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   text-align: center;
   background: #fff;
 
-  h1 {
-    font-size: 42px;
-    color: $primary-color;
-  }
-
   .recruitment-content {
     max-width: 800px;
     margin: 0 auto;
 
-    h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 18px;
-      color: $text-color;
-      margin-bottom: 40px;
-    }
   }
 }
 
-// Responsive styles
 @media (max-width: 800px) {
   .location-col, .course-col {
     flex-basis: 100% !important;
