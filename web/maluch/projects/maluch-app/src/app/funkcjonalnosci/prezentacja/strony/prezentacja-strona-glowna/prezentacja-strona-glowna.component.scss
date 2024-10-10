@@ -79,7 +79,8 @@ p {
   margin: 20px auto;
   line-height: 1.6;
 }
-ul{
+
+ul {
   margin: 20px auto;
 
 }
@@ -310,6 +311,7 @@ ul{
 
 .card-container {
   overflow: hidden;
+
 }
 
 .card {
@@ -339,6 +341,7 @@ ul{
 .card-image {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /*-------------*/
