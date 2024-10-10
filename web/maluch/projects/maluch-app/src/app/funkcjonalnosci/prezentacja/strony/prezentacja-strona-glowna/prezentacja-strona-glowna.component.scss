@@ -79,9 +79,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     }
 
     h2 {
-      //font-size: 18px;
       margin: 10px auto 40px;
-      //color:  $primary-color;
     }
   }
 }
@@ -95,14 +93,19 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     display: flex;
     justify-content: center;
 
-    @media (max-width: 800px) {
-      flex-direction: column;
-    }
+
+    //@media (max-width: 800px) {
+    //  flex-direction: column;
+    //}
   }
 
   .welcome-left, .welcome-right {
-    flex: 2;
-    text-align: left;
+    padding: 0 20px;
+    width: 50%;
+  }
+
+  .welcome-right {
+    width: 50%;
   }
 
   h1 {
@@ -113,9 +116,22 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   p {
     font-size: 18px;
     color: $text-color;
+    margin: 20px auto;
+
   }
 }
+@media (max-width: 800px) {
+  .welcome {
 
+    .welcome-content {
+      flex-direction: column;
+    }
+
+    .welcome-left, .welcome-right {
+      width: 100%;
+    }
+  }
+}
 // Course section
 .course {
   padding: 100px 0;
@@ -130,10 +146,11 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   p {
     font-size: 18px;
     color: $text-color;
-    margin-bottom: 60px;
+    //margin-bottom: 20px;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+    //margin-left: auto;
+    //margin-right: auto;
+    margin: 20px auto;
     line-height: 1.6;
   }
 
@@ -142,15 +159,17 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     justify-content: center;
     margin-bottom: 40px;
   }
+
   .description-col {
     flex-direction: column;
     text-align: left;
   }
+
   .course-col {
     flex-basis: 45%;
     display: flex;
     justify-content: center;
-
+    text-align: left;
 
 
     h3 {
@@ -174,6 +193,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     }
   }
 }
+
 @media (max-width: 800px) {
   .course {
 
@@ -181,20 +201,10 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
       img {
         width: 80px;
         height: 80px;
-        transition: transform 0.3s ease;
-      }
-
-      .course-img {
-        padding: 20px;
-
-        &:hover {
-          transform: scale(1.1); // Powiększenie ikony przy najechaniu
-        }
       }
     }
   }
 }
-
 
 
 // Locations section

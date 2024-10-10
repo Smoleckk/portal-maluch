@@ -1,9 +1,9 @@
 .footer {
   width: 100%;
-  //background: linear-gradient(135deg, #0A303A, #2A4858);
+  background: linear-gradient(135deg, #0A303A, #2A4858);
   padding: 50px 20px;
-  border-radius: 8px;
-  color: #0A303A;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
 }
 
 .footer .footer-row {
@@ -33,7 +33,7 @@
 
 .footer-col ul li a {
   text-decoration: none;
-  color: #0A303A;
+  color: #fff;
   font-size: 1.1rem;
   transition: color 0.3s ease;
 }
@@ -59,7 +59,7 @@
   border-radius: 6px;
   border: 1px solid #7489C6;
   background: none;
-  color: #0A303A;
+  color: #fff;
   outline: none;
 }
 
@@ -68,7 +68,7 @@
   background-color: #f1c40f;
   border: none;
   border-radius: 6px;
-  color: #0A303A;
+  color: #fff;
   cursor: pointer;
   font-weight: bold;
   transition: background 0.3s ease;
