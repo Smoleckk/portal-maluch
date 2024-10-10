@@ -4,14 +4,17 @@ import {PrezentacjaStronaGlownaComponent} from './strony/prezentacja-strona-glow
 import {
   PrezentacjaStronaKontaktComponent
 } from "./strony/prezentacja-strona-kontakt/prezentacja-strona-kontakt.component";
+import {StronaDokumentyComponent} from "./strony/strona-dokumenty/strona-dokumenty.component";
 
 const routes: Routes = [{
   path: '',
   component: PrezentacjaStronaGlownaComponent
+}, {
+  path: 'kontakt', component: PrezentacjaStronaKontaktComponent
 },
   {
-    path: 'kontakt',
-    component: PrezentacjaStronaKontaktComponent
+    path: 'dokumenty',
+    component: StronaDokumentyComponent
   }];
 
 @NgModule({

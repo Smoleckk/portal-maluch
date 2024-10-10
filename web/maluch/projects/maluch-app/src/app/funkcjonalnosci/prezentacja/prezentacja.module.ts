@@ -10,6 +10,7 @@ import { FooterComponent } from './komponenty/footer/footer.component';
 import { HeaderComponent } from './komponenty/header/header.component';
 import { SubHeaderComponent } from './komponenty/sub-header/sub-header.component';
 import { PlacowkiComponent } from './komponenty/placowki/placowki.component';
+import { StronaDokumentyComponent } from './strony/strona-dokumenty/strona-dokumenty.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { PlacowkiComponent } from './komponenty/placowki/placowki.component';
         HeaderComponent,
         SubHeaderComponent,
         PlacowkiComponent,
+        StronaDokumentyComponent,
     ],
     exports: [
         FooterComponent
