@@ -12,35 +12,35 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 
 
 // Welcome section
-.sub-header {
+.welcome {
   padding: 120px 0;
   background: $background-color;
 
-  .sub-header-content {
+  .welcome-content {
     display: flex;
     justify-content: center;
     max-width: 1200px;
     margin: 0 auto;
   }
 
-  .sub-header-content-left, .sub-header-content-right {
+  .welcome-left, .welcome-right {
     padding: 0 20px;
     width: 50%;
   }
 
-  .sub-header-content-right {
+  .welcome-right {
     width: 50%;
   }
 }
 
 @media (max-width: 800px) {
-  .sub-header {
+  .welcome {
 
-    .sub-header-content {
+    .welcome-content {
       flex-direction: column;
     }
 
-    .sub-header-content-left, .sub-header-content-right {
+    .welcome-left, .welcome-right {
       width: 100%;
     }
   }
@@ -90,8 +90,10 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
       }
     }
 
-    .sub-header-content-img {
+    .course-img {
       padding: 20px;
+
+
     }
   }
 }
