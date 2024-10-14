@@ -1,0 +1,22 @@
+<app-sub-header header="Placowki"
+                tekst="Przedszkola i zerówki Gwiazdeczka"></app-sub-header>
+
+<section class="nasze-placowki">
+  <div class="container">
+    <h1>Nasze placówki</h1>
+    <p>Zapraszamy do zapoznania się z naszymi placówkami, które są rozmieszczone w różnych miastach, aby zapewnić Państwu dogodną lokalizację.</p>
+
+    <div class="lista-placowek">
+      <div class="placowka" *ngFor="let placowka of placowki">
+        <img [src]="placowka.zdjecie" alt="{{placowka.nazwa}}">
+        <div class="opis">
+          <h2>{{placowka.nazwa}}</h2>
+          <p><strong>Adres:</strong> {{placowka.adres}}</p>
+          <p><strong>Godziny otwarcia:</strong> {{placowka.godzinyOtwarcia}}</p>
+          <p>{{placowka.opis}}</p>
+          <a class="btn btn-light" [routerLink]="placowka.link">Więcej informacji</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -6,6 +6,12 @@ import {
 } from "./strony/prezentacja-strona-kontakt/prezentacja-strona-kontakt.component";
 import {StronaDokumentyComponent} from "./strony/strona-dokumenty/strona-dokumenty.component";
 import {PrezentacjaStronaONasComponent} from "./strony/prezentacja-strona-o-nas/prezentacja-strona-o-nas.component";
+import {
+  PrezentacjaStronaPlacowkiComponent
+} from "./strony/prezentacja-strona-placowki/prezentacja-strona-placowki.component";
+import {
+  PrezentacjaStonaPlacowkiSzczegolyComponent
+} from "./strony/prezentacja-stona-placowki-szczegoly/prezentacja-stona-placowki-szczegoly.component";
 
 const routes: Routes = [{
   path: '',
@@ -20,6 +26,12 @@ const routes: Routes = [{
   {
     path: 'o-nas',
     component: PrezentacjaStronaONasComponent
+  },{
+    path: 'placowki',
+    component: PrezentacjaStronaPlacowkiComponent
+  },{
+    path: 'placowki/:id',
+    component: PrezentacjaStonaPlacowkiSzczegolyComponent
   }];
 
 @NgModule({

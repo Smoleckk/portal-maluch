@@ -12,6 +12,8 @@ import { SubHeaderComponent } from './komponenty/sub-header/sub-header.component
 import { PlacowkiComponent } from './komponenty/placowki/placowki.component';
 import { StronaDokumentyComponent } from './strony/strona-dokumenty/strona-dokumenty.component';
 import { PrezentacjaStronaONasComponent } from './strony/prezentacja-strona-o-nas/prezentacja-strona-o-nas.component';
+import { PrezentacjaStronaPlacowkiComponent } from './strony/prezentacja-strona-placowki/prezentacja-strona-placowki.component';
+import { PrezentacjaStonaPlacowkiSzczegolyComponent } from './strony/prezentacja-stona-placowki-szczegoly/prezentacja-stona-placowki-szczegoly.component';
 
 
 @NgModule({
@@ -24,6 +26,8 @@ import { PrezentacjaStronaONasComponent } from './strony/prezentacja-strona-o-na
         PlacowkiComponent,
         StronaDokumentyComponent,
         PrezentacjaStronaONasComponent,
+        PrezentacjaStronaPlacowkiComponent,
+        PrezentacjaStonaPlacowkiSzczegolyComponent,
     ],
     exports: [
         FooterComponent

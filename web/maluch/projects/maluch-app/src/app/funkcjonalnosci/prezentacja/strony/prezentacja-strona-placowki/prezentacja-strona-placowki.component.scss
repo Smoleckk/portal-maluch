@@ -1,0 +1,43 @@
+// Variables for color palette
+$primary-color: #0A303A;
+$accent-color: #f1c40f;
+$text-color: #333;
+$background-color: #fff;
+$highlight-color: #f39c12;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
+.nasze-placowki {
+  padding: 40px 0;
+  background-color: $background-color;
+}
+
+.lista-placowek {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.placowka {
+  flex-basis: 33%;
+  background-color: $background-color;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 2px;
+  box-shadow: 0 2px 10px $shadow-color;
+}
+
+.placowka img {
+  width: 100%;
+  border-radius: 8px;
+  max-height: 400px;
+}
+
+.opis {
+  padding: 20px 0;
+}
+@media (max-width: 800px) {
+  .placowka {
+    flex-basis: 100% !important;
+  }
+}
