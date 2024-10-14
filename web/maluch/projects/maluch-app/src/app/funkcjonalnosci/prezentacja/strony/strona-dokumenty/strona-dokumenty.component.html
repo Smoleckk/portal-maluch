@@ -4,17 +4,9 @@
 <section class="dokumenty">
   <div class="container">
     <div class="dokumenty-details">
-      <div class="dokumenty-details-column">
+      <div class="dokumenty-details-column" *ngFor="let dokument of dokumenty">
         <span class="icon material-symbols-outlined">description</span>
-        <span>Informator przedszkolaka</span>
-      </div>
-      <div class="dokumenty-details-column">
-        <span class="icon material-symbols-outlined">description</span>
-        <span>Karta zgloszen przedszkole</span>
-      </div>
-      <div class="dokumenty-details-column">
-        <span class="icon material-symbols-outlined">description</span>
-        <span> Karta zgloszen złobek</span>
+        <span>{{ dokument.nazwa }}</span>
       </div>
     </div>
   </div>

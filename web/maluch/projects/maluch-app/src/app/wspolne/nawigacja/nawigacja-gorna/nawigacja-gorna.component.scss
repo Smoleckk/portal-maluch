@@ -22,7 +22,7 @@
 .brand-title {
   font-size: 1.8rem;
   margin: 0.5rem;
-  color: #f1c40f; /* Golden color for the brand name */
+  color: #0A303A; /* Golden color for the brand name */
   font-weight: bold;
 }
 
@@ -44,13 +44,13 @@
 .navbar-links li a {
   display: block;
   text-decoration: none;
-  color: #f1c40f; /* Golden color for links */
+  color: #0A303A; /* Golden color for links */
   padding: 1rem;
   transition: color 0.3s ease;
 }
 
 .navbar-links li a:hover {
-  color: #0A303A; /* White on hover */
+  color: #f1c40f; /* White on hover */
 }
 
 /* Toggle Button for Mobile */
@@ -69,13 +69,13 @@
 .toggle-button .bar {
   height: 3px;
   width: 100%;
-  background-color: #f1c40f; /* Golden bars for the toggle */
+  background-color: #0A303A; /* Golden bars for the toggle */
   border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
 .toggle-button:hover .bar {
-  background-color: #0A303A; /* White bars on hover */
+  background-color: #f1c40f; /* White bars on hover */
 }
 
 /* Responsive Styles */

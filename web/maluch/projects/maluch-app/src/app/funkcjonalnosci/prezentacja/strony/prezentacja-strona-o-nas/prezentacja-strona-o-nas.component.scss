@@ -1,0 +1,111 @@
+$primary-color: #0A303A;
+$accent-color: #f1c40f;
+$text-color: #333;
+$background-color: #fff;
+$highlight-color: #f39c12;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
+
+.kontakt {
+  padding:30px 0;
+  background-color: #fff;
+}
+.kontakt-details{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+.kontakt-details-row{
+  margin: 0 20px;
+}
+
+
+// Welcome section
+.welcome {
+  padding: 60px 0;
+  background: $background-color;
+
+  .welcome-content {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .welcome-left, .welcome-right {
+    padding: 0 20px;
+    width: 50%;
+  }
+
+  .welcome-right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+      max-width: 650px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .welcome {
+
+    .welcome-content {
+      flex-direction: column;
+    }
+
+    .welcome-left, .welcome-right {
+      width: 100%;
+    }
+  }
+}
+
+.recruitment {
+  padding: 60px 0;
+  text-align: center;
+
+  .recruitment-content {
+    //max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    .welcome-right {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      margin: 60px 20px;
+
+      img {
+        width: 100%;
+        max-width: 650px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .recruitment {
+
+    .recruitment-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      margin: 0 auto;
+      .welcome-right {
+        width: 80%;
+        margin: 10px 0;
+        img {
+          width: 100%;
+          max-width: 650px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
