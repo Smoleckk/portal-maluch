@@ -8,94 +8,83 @@ $shadow-color: rgba(0, 0, 0, 0.1);
 $shadow-hover-color: rgba(0, 0, 0, 0.2);
 
 //@import "../../../../../styles.scss";
-
-.welcome-content {
+.wiersze {
   display: flex;
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-// Welcome section
-.welcome {
+.powitanie {
   padding: 120px 0;
-  background: $background-color;
+  background-color: #f9f9f9;
 
-
-
-  .welcome-left, .welcome-right {
+  .wiersz-lewy, .wiersz-prawy {
     padding: 0 20px;
     width: 50%;
   }
 
-  .welcome-right {
+  .wiersz-prawy {
     width: 50%;
   }
 }
 
 @media (max-width: 800px) {
-  .welcome-content {
+  .wiersze {
     flex-direction: column;
   }
-  .welcome {
-
-    .welcome-left, .welcome-right {
+  .powitanie {
+    .wiersz-lewy, .wiersz-prawy {
       width: 100%;
     }
   }
 }
 
-
-.course {
+.rozwoj {
   padding: 120px 0;
-  background: $background-color;
-    text-align: center;
+  background-color: #ffffff;
+  text-align: center;
 
-
-
-  .description-col, .course-col {
+  .opis-kolumna, .kolumna-kursu {
     padding: 0 20px;
     width: 50%;
     text-align: left;
   }
 
-  .welcome-right {
-    width: 50%;
-  }
-    .course-col {
-      flex-basis: 45%;
-      display: flex;
-      justify-content: center;
-      text-align: left;
+  .kolumna-kursu {
+    flex-basis: 45%;
+    display: flex;
+    justify-content: center;
+    text-align: left;
 
-      img {
-        width: 180px;
-        height: 180px;
-      }
-
-      .course-img {
-        padding: 20px;
-      }
+    img {
+      width: 180px;
+      height: 180px;
     }
+
+    .obrazek-kursu {
+      padding: 20px;
+    }
+  }
 }
 
 @media (max-width: 800px) {
-  .course {
+  .rozwoj {
 
-    .description-col, .course-col  {
+    .opis-kolumna, .kolumna-kursu {
       width: 100%;
     }
-        .course-col {
-          text-align: center;
-          flex-direction: column;
-          width: 100%;
 
+    .kolumna-kursu {
+      text-align: center;
+      flex-direction: column;
+      width: 100%;
 
-          img {
-            width: 280px;
-            height: 280px;
-          }
-        }
+      img {
+        width: 280px;
+        height: 280px;
+      }
+    }
   }
 }
 
