@@ -9,18 +9,17 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 .dokumenty {
   padding: 60px 0;
   background-color: $background-color;
-}
 
-.dokumenty-details {
-  display: flex;
-  flex-direction: column;
-  color: $primary-color;
-
-  .dokumenty-details-column {
+  .dokumenty-kontent {
     display: flex;
-    align-items: center;
-    margin: 10px 0;
-    cursor: pointer;
+    flex-direction: column;
+    color: $primary-color;
 
+    .dokumenty-kontent-wiersz {
+      display: flex;
+      align-items: center;
+      margin: 10px 0;
+      cursor: pointer;
+    }
   }
 }
