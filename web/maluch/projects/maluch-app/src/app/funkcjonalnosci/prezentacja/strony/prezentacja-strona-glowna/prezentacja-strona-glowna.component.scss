@@ -13,18 +13,9 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
-}
 
-.powitanie {
-  padding: 120px 0;
-  background-color: #f9f9f9;
-
-  .wiersz-lewy, .wiersz-prawy {
+  .kolumna-lewa, .kolumna-prawa {
     padding: 0 20px;
-    width: 50%;
-  }
-
-  .wiersz-prawy {
     width: 50%;
   }
 }
@@ -32,28 +23,38 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 @media (max-width: 800px) {
   .wiersze {
     flex-direction: column;
-  }
-  .powitanie {
-    .wiersz-lewy, .wiersz-prawy {
-      width: 100%;
+
+    .kolumna-lewa, .kolumna-prawa {
+      width: 100% !important;
     }
+  }
+
+}
+
+////powitanie
+.powitanie {
+  padding: 120px 0;
+  background-color: #f9f9f9;
+
+  .kolumna-prawa {
+    width: 50%;
   }
 }
 
+
+////rozwoj
 .rozwoj {
   padding: 120px 0;
-  background-color: #ffffff;
+  background-color: $background-color;
   text-align: center;
 
-  .opis-kolumna, .kolumna-kursu {
-    padding: 0 20px;
-    width: 50%;
+  .kolumna-lewa, .kolumna-prawa {
     text-align: left;
   }
 
-  .kolumna-kursu {
-    flex-basis: 45%;
+  .kolumna-prawa {
     display: flex;
+    flex-basis: 45%;
     justify-content: center;
     text-align: left;
 
@@ -70,14 +71,9 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 
 @media (max-width: 800px) {
   .rozwoj {
-
-    .opis-kolumna, .kolumna-kursu {
-      width: 100%;
-    }
-
-    .kolumna-kursu {
-      text-align: center;
+    .kolumna-prawa {
       flex-direction: column;
+      text-align: center;
       width: 100%;
 
       img {
