@@ -7,40 +7,35 @@ $shadow-color: rgba(0, 0, 0, 0.1);
 $shadow-hover-color: rgba(0, 0, 0, 0.2);
 
 
-.kontakt {
-  padding:30px 0;
-  background-color: #fff;
-}
-.kontakt-details{
-  text-align: center;
-  justify-content: center;
+.wiersze {
   display: flex;
+  justify-content: center;
+  max-width: 1200px;
   margin: 0 auto;
-}
-.kontakt-details-row{
-  margin: 0 20px;
-}
 
-
-// Welcome section
-.welcome {
-  padding: 60px 0;
-  background: $background-color;
-
-  .welcome-content {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .welcome-left, .welcome-right {
+  .kolumna-lewa, .kolumna-prawa {
     padding: 0 20px;
     width: 50%;
   }
+}
 
-  .welcome-right {
-    width: 50%;
+@media (max-width: 800px) {
+  .wiersze {
+    flex-direction: column;
+
+    .kolumna-lewa, .kolumna-prawa {
+      width: 100% !important;
+    }
+  }
+
+}
+
+// Welcome section
+.o-nas {
+  padding: 60px 0;
+  background: $background-color;
+
+  .kolumna-prawa {
     display: flex;
     align-items: center;
 
@@ -52,18 +47,6 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   }
 }
 
-@media (max-width: 800px) {
-  .welcome {
-
-    .welcome-content {
-      flex-direction: column;
-    }
-
-    .welcome-left, .welcome-right {
-      width: 100%;
-    }
-  }
-}
 
 .recruitment {
   padding: 60px 0;
@@ -73,7 +56,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     //max-width: 800px;
     margin: 0 auto;
     display: flex;
-    .welcome-right {
+    .kolumna-prawa {
       width: 50%;
       display: flex;
       align-items: center;
@@ -97,7 +80,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
       justify-content: center;
 
       margin: 0 auto;
-      .welcome-right {
+      .kolumna-prawa {
         width: 80%;
         margin: 10px 0;
         img {

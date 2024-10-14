@@ -84,20 +84,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   }
 }
 
-// Recruitment section
-.recruitment {
-  padding: 60px 0;
-  text-align: center;
-  background: $background-color;
-
-  .recruitment-content {
-    max-width: 800px;
-    margin: 0 auto;
-
-  }
-}
-
-
+// karta z obrazkiem
 .karta-sekcja {
   padding: 10px 0;
   display: flex;
@@ -115,41 +102,27 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   margin: 0;
 }
 
-.card-container {
+.karta-kontent {
   overflow: hidden;
-
 }
 
-.card {
+.karta {
   max-width: 700px;
   background-color: $background-color;
   border-radius: 10px;
   padding: 30px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lekkie, eleganckie cieniowanie */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
 }
 
-.card-title {
-  font-size: 30px;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 20px;
-}
-
-.card-desc {
-  padding: 10px;
-  text-align: left;
-  font-size: 18px;
-}
-
-.card-image {
+.karta-obrazek {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-div.card-image img {
+div.karta-obrazek img {
   width: 50%;
   height: 400px;
   max-width: 650px;
@@ -157,7 +130,7 @@ div.card-image img {
 }
 
 @media (max-width: 768px) {
-  div.card-image img {
+  div.karta-obrazek img {
     width: 100%;
     height: auto;
   }
@@ -169,8 +142,20 @@ div.card-image img {
     flex-direction: column-reverse;
   }
 
-  .card {
+  .karta {
     width: 100%;
     margin-top: -4px;
+  }
+}
+
+// rekrutacja
+.rekrutacja {
+  padding: 60px 0;
+  text-align: center;
+  background: $background-color;
+
+  .rekrutacja-kontent {
+    max-width: 800px;
+    margin: 0 auto;
   }
 }
