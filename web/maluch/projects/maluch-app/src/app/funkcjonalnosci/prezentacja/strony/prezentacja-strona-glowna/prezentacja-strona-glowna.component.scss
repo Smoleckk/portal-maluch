@@ -9,18 +9,19 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 
 //@import "../../../../../styles.scss";
 
+.welcome-content {
+  display: flex;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 // Welcome section
 .welcome {
   padding: 120px 0;
   background: $background-color;
 
-  .welcome-content {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+
 
   .welcome-left, .welcome-right {
     padding: 0 20px;
@@ -33,11 +34,10 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 800px) {
+  .welcome-content {
+    flex-direction: column;
+  }
   .welcome {
-
-    .welcome-content {
-      flex-direction: column;
-    }
 
     .welcome-left, .welcome-right {
       width: 100%;
@@ -51,12 +51,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   background: $background-color;
     text-align: center;
 
-  .row {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+
 
   .description-col, .course-col {
     padding: 0 20px;
@@ -73,13 +68,6 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
       justify-content: center;
       text-align: left;
 
-
-      h3 {
-        font-size: 22px;
-        color: $primary-color;
-        margin-bottom: 20px;
-      }
-
       img {
         width: 180px;
         height: 180px;
@@ -93,10 +81,6 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 
 @media (max-width: 800px) {
   .course {
-
-    .row {
-      flex-direction: column;
-    }
 
     .description-col, .course-col  {
       width: 100%;
@@ -114,6 +98,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
         }
   }
 }
+
 // Recruitment section
 .recruitment {
   padding: 60px 0;
