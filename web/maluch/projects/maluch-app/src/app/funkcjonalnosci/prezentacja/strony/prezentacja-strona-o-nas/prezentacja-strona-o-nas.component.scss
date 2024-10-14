@@ -47,16 +47,16 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   }
 }
 
-
-.recruitment {
+// o nas zabawa
+.o-nas-zabawa {
   padding: 60px 0;
   text-align: center;
 
-  .recruitment-content {
-    //max-width: 800px;
+  .o-nas-zabawa-kontent {
     margin: 0 auto;
     display: flex;
-    .kolumna-prawa {
+
+    .o-nas-zabawa-box-na-zdjecie {
       width: 50%;
       display: flex;
       align-items: center;
@@ -70,19 +70,19 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     }
   }
 }
-@media (max-width: 800px) {
-  .recruitment {
 
-    .recruitment-content {
-      display: flex;
+@media (max-width: 800px) {
+  .o-nas-zabawa {
+
+    .o-nas-zabawa-kontent {
       flex-direction: column;
       align-items: center;
       justify-content: center;
 
-      margin: 0 auto;
-      .kolumna-prawa {
+      .o-nas-zabawa-box-na-zdjecie {
         width: 80%;
         margin: 10px 0;
+
         img {
           width: 100%;
           max-width: 650px;
