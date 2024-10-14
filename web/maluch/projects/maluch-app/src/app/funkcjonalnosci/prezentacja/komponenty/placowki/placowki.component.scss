@@ -7,21 +7,16 @@ $highlight-color: #f39c12;
 $shadow-color: rgba(0, 0, 0, 0.1);
 $shadow-hover-color: rgba(0, 0, 0, 0.2);
 
-.locations {
+.placowka {
   padding: 60px 0;
   text-align: center;
 
-  .row {
+  .placowka-wiersze {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
-
-  h1 {
-    color: $accent-color;
-  }
-
-  .location-col {
+  .placowka-wiersze-kolumna {
     flex-basis: 30%;
     background-color: $background-color;
     border-radius: 10px;
@@ -35,14 +30,13 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     &:hover {
       transform: translateY(-5px);
       box-shadow: 0 4px 20px $shadow-hover-color;
-      //cursor: pointer;
     }
 
   }
 }
 
 @media (max-width: 800px) {
-  .location-col, .course-col {
+  .placowka-wiersze-kolumna, .course-col {
     flex-basis: 100% !important;
   }
 }

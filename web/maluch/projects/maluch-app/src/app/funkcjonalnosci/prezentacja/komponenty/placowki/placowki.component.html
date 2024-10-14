@@ -1,17 +1,16 @@
-<section [style]="kolorTla" class="locations">
+<section [style]="kolorTla" class="placowka">
   <div class="container">
     <h1>Placówki</h1>
     <p>Przedszkole Gwiazdeczka to sieć przyjaznych i inspirujących miejsc, gdzie dzieci mogą rozwijać swoje talenty.
       Każda placówka oferuje wyjątkowe programy edukacyjne oraz pełne zaangażowanie w rozwój emocjonalny i społeczny
       maluchów. Oto nasze lokalizacje:</p>
-    <div class="row">
-      <div class="location-col">
+    <div class="placowka-wiersze">
+      <div class="placowka-wiersze-kolumna">
         <span class="icon material-symbols-outlined">place</span>
         <h3>Placówka Kraśnik Fabryczny</h3>
         <p>Nasza główna placówka, znajdująca się w sercu miasta, oferuje bogaty program zajęć oraz doskonałe warunki do
           nauki.</p>
         <p><strong>Adres:</strong> Grunwaldzka 4A, 23-204 Kraśnik</p>
-        <div class="map-container">
           <iframe *ngIf="czyWyswietlicMapy"
                   allowfullscreen=""
                   height="250"
@@ -20,9 +19,8 @@
                   style="border:0;"
                   title="Placowka Fabryczny"
                   width="100%"></iframe>
-        </div>
       </div>
-      <div class="location-col">
+      <div class="placowka-wiersze-kolumna">
         <span class="icon material-symbols-outlined">place</span>
         <h3>Placówka Kraśnik Stary</h3>
         <p>Placówka wschodnia to spokojne miejsce otoczone zielenią, idealne dla dzieci ceniących sobie bliskość
@@ -37,7 +35,7 @@
                 title="Placowka Stary"
                 width="100%"></iframe>
       </div>
-      <div class="location-col">
+      <div class="placowka-wiersze-kolumna">
         <span class="icon material-symbols-outlined">place</span>
         <h3>Placówka Janow Lubelski</h3>
         <p>Znajdująca się w dynamicznie rozwijającej się dzielnicy, ta placówka oferuje nowoczesne zaplecze
