@@ -10,11 +10,9 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 .wiersze {
   display: flex;
   justify-content: center;
-  max-width: 1200px;
   margin: 0 auto;
 
   .kolumna-lewa, .kolumna-prawa {
-    padding: 0 20px;
     min-width: 50%;
   }
 }
@@ -46,80 +44,22 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   }
 }
 
-.szczegoly-placowki-opis {
-  padding: 60px 0;
 
-  .szczegoly-placowki-opis-kontent {
-  }
-}
-
-
-.szczegoly-placowki-opis {
-  .container {
-    .szczegoly-placowki-opis-kontent {
-      padding: 0 20px;
-
-      h2 {
-        font-size: 2.5em; // Larger font for main title
-      }
-
-      h3 {
-        color: $highlight-color;
-        font-size: 1.75em; // Slightly larger font for subheading
-      }
-    }
-  }
-}
-
-.lokal {
+@media (max-width: 800px) {
   .wiersze {
-    display: flex;
-    justify-content: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-direction: column;
 
     .kolumna-lewa, .kolumna-prawa {
-      padding: 0 20px;
-      width: 50%;
+      width: 100% !important;
 
       img {
-        width: 600px;
-        height: 400px;
-      }
-    }
-  }
-
-  @media (max-width: 800px) {
-    .wiersze {
-      flex-direction: column;
-
-      .kolumna-lewa, .kolumna-prawa {
-        width: 100% !important;
-        img {
-          width: 300px;
-          height: 200px;
-        }
+        width: 300px;
+        height: 200px;
       }
     }
   }
 }
 
 .organizacja {
-  .container {
-    h3 {
-      color: $highlight-color;
-    }
-  }
-}
-
-.grupy {
-  .container {
-    h2 {
-      margin-bottom: 20px;
-    }
-
-    p {
-      margin-bottom: 15px;
-    }
-  }
+  margin-top:60px;
 }

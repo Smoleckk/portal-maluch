@@ -6,7 +6,7 @@
 <section class="szczegoly-placowki">
   <div class="container">
     <div class="szczegoly-placowki-kontent">
-      <h2>{{ placowka.nazwa }} - {{ placowka.adres }}</h2>
+      <h1>{{ placowka.nazwa }} - {{ placowka.adres }}</h1>
       <div class="wiersze">
         <div class="kolumna-lewa">
           <iframe
@@ -30,12 +30,22 @@
             <h3>Email:</h3>
             <h3>przedszkole.kontakt@gwiazdeczka.pl</h3>
           </div>
+          <div class="kolumna-prawa-wiersz">
+            <span class="icon material-symbols-outlined">place</span>
+            <h3>Adres:</h3>
+            <h3>{{ placowka.adres }}</h3>
+          </div>
+          <div class="kolumna-prawa-wiersz">
+            <span class="icon material-symbols-outlined">schedule</span>
+            <h3>Godziny otwarcia:</h3>
+            <h3>{{ placowka.godzinyOtwarcia }}</h3>
+          </div>
         </div>
       </div>
       <div class="wiersze">
         <div class="kolumna-lewa">
-          <p><strong>Adres:</strong> {{ placowka.adres }}</p>
-          <p><strong>Godziny otwarcia:</strong> {{ placowka.godzinyOtwarcia }}</p>
+<!--          <p><strong>Adres:</strong> {{ placowka.adres }}</p>-->
+<!--          <p><strong>Godziny otwarcia:</strong> {{ placowka.godzinyOtwarcia }}</p>-->
         </div>
         <p>Jeżeli mają Państwo pytania dotyczące naszej pracy, zapraszamy do kontaktu telefonicznego lub mailowego.</p>
       </div>
@@ -43,43 +53,33 @@
   </div>
 </section>
 
-<section class="szczegoly-placowki-opis">
+<section class="organizacja">
   <div class="container">
-    <div class="szczegoly-placowki-opis-kontent">
-      <h2>{{ placowka.nazwa }}</h2>
+      <h1>{{ placowka.nazwa }}</h1>
       <p>{{ placowka.opisPelny }}</p>
-      <h3>Dlaczego warto wybrać {{ placowka.nazwa }}?</h3>
+      <h3>Dlaczego warto wybrać?</h3>
       <p>{{ placowka.dlaczegoWarto }}</p>
-    </div>
   </div>
 </section>
-
-<section class="lokal">
-  <div class="container wiersze">
-    <div class="kolumna-lewa">
-      <h2>{{ lokal.tytul }}</h2>
-      <p *ngFor="let item of lokal.opis">{{ item }}</p>
-    </div>
-    <div class="kolumna-prawa karta">
-      <div class="karta-obrazek">
-        <img src="assets/szkola1.jpg" alt="Lokal przedszkola">
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <section class="organizacja">
   <div class="container">
-    <h2>{{ organizacja.tytul }}</h2>
+    <h1>{{ lokal.tytul }}</h1>
+    <p *ngFor="let item of lokal.opis">{{ item }}</p>
+  </div>
+</section>
+
+<section class="organizacja">
+  <div class="container">
+    <h1>{{ organizacja.tytul }}</h1>
     <p>{{ organizacja.godzinyOtwarcia }}</p>
     <p>{{ organizacja.opis }}</p>
   </div>
 </section>
 
-<section class="grupy">
+<section class="organizacja">
   <div class="container">
-    <h2>{{ grupy.tytul }}</h2>
+    <h1>{{ grupy.tytul }}</h1>
     <p>{{ grupy.opis }}</p>
     <ul>
       <li *ngFor="let grupa of grupy.grupyList">{{ grupa }}</li>
