@@ -1,35 +1,49 @@
 <app-sub-header header="Strefa rodzica"
                 tekst="Strefa rodzica lorem ipsum"></app-sub-header>
 
-
 <section class="strefa-rodzica">
-  <div class="container">
-    <!-- Wyprawka Section -->
-    <h1>Wyprawka</h1>
-    <ul>
-      <li *ngFor="let item of wyprawka">{{ item }}</li>
-    </ul>
+<app-karta-informacyjna
+  [buttonText]="'Więcej informacji o wyprawce'"
+  [contentList]="wyprawka"
+  [description]="'Przygotowanie dziecka na pierwszy dzień.'"
+  [imageUrl]="'assets/wyprawka.jpg'"
+  [title]="'Wyprawka'"
+  [zdjeciePoLewej]=true>
+</app-karta-informacyjna>
 
-    <!-- Cennik Section -->
-    <h1>Cennik</h1>
-    <p>{{ cennik }}</p>
-    <!-- Posilki Section -->
-    <h1>Posiłki</h1>
-    <ul>
-      <li *ngFor="let posilek of posilki">{{ posilek }}</li>
-    </ul>
-    <!-- Przyprowadzanie Dziecka Section -->
-    <h1>Przyprowadzanie dziecka do Przedszkola</h1>
-    <ul>
-      <li *ngFor="let item of przyprowadzanie">{{ item }}</li>
-    </ul>
+<app-karta-informacyjna
+  [buttonText]="'Więcej informacji o cenniku'"
+  [contentList]="cennik"
+  [description]="'Pamietaj o terminach'"
+  [imageUrl]="'assets/cennik.jpg'"
+  [title]="'Cennik'"
+  [zdjeciePoPrawej]=true>
+</app-karta-informacyjna>
 
-    <!-- Odbiór Dziecka Section -->
-    <h1>Odbiór dziecka z Przedszkola</h1>
-    <ul>
-      <li *ngFor="let item of odbior">{{ item }}</li>
-    </ul>
+<app-karta-informacyjna
+  [buttonText]="'Więcej informacji o posiłkach'"
+  [contentList]="posilki"
+  [description]="'Zbilansowana dieta dla Twojego dziecka.'"
+  [imageUrl]="'assets/posilki.jpg'"
+  [title]="'Posiłki'"
+  [zdjeciePoLewej]=true>
+</app-karta-informacyjna>
 
-  </div>
+<app-karta-informacyjna
+  [buttonText]="'Więcej informacji o przyprowadzaniu'"
+  [contentList]="przyprowadzanie"
+  [description]="'Zasady i harmonogram.'"
+  [imageUrl]="'assets/przyprowadzenie.jpg'"
+  [title]="'Przyprowadzanie dziecka do Przedszkola'"
+  [zdjeciePoPrawej]=true>
+</app-karta-informacyjna>
 
+<app-karta-informacyjna
+  [buttonText]="'Więcej informacji o odbiorze'"
+  [contentList]="odbior"
+  [description]="'Zasady odbioru dzieci.'"
+  [imageUrl]="'assets/odbior.jpg'"
+  [title]="'Odbiór dziecka z Przedszkola'"
+  [zdjeciePoLewej]=true>
+</app-karta-informacyjna>
 </section>

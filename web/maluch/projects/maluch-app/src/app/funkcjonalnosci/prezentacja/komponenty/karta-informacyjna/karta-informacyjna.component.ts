@@ -12,7 +12,8 @@ export class KartaInformacyjnaComponent {
   @Input() description: string = '';  // Dodatkowy tekst (np. opis)
   @Input() buttonText: string = '';  // Tekst na przycisku
   @Input() imageUrl: string = '';  // URL obrazka
-  @Input() zdjeciePoLewej: boolean = true // Pozycja obrazka, domyślnie po lewej stronie
+  @Input() zdjeciePoLewej: boolean = false // Pozycja obrazka, domyślnie po lewej stronie
   @Input() zdjeciePoPrawej: boolean = false // Pozycja obrazka, domyślnie po lewej stronie
+  @Input() czyPrzycisk: boolean = false // Pozycja obrazka, domyślnie po lewej stronie
 
 }

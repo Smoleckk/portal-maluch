@@ -2,19 +2,15 @@
   <div class="container">
     <div class="karta-kontent">
       <div class="float-layout">
-        <!-- Zmieniamy klasę na podstawie wartości @Input imagePosition -->
         <div class="karta-obrazek card-image-left">
           <img [src]="imageUrl" alt="Obrazek sekcji">
           <div class="karta">
             <h1>{{ title }}</h1>
             <ul>
-              <!-- Wyświetlamy listę przekazanych elementów -->
               <li *ngFor="let item of contentList">{{ item }}</li>
             </ul>
-            <!-- Opcjonalny dodatkowy opis -->
             <p *ngIf="description">{{ description }}</p>
-            <!-- Przycisk -->
-            <a class="btn btn-light" href="#">{{ buttonText }}</a>
+            <a *ngIf="czyPrzycisk"  class="btn btn-light" href="#">{{ buttonText }}</a>
           </div>
         </div>
       </div>
@@ -26,21 +22,16 @@
   <div class="container">
     <div class="karta-kontent ">
       <div class="float-layout">
-        <!-- Zmieniamy klasę na podstawie wartości @Input imagePosition -->
         <div class="karta-obrazek card-image-right">
           <div class="karta">
             <h1>{{ title }}</h1>
             <ul>
-              <!-- Wyświetlamy listę przekazanych elementów -->
               <li *ngFor="let item of contentList">{{ item }}</li>
             </ul>
-            <!-- Opcjonalny dodatkowy opis -->
             <p *ngIf="description">{{ description }}</p>
-            <!-- Przycisk -->
-            <a class="btn btn-light" href="#">{{ buttonText }}</a>
+            <a *ngIf="czyPrzycisk"  class="btn btn-light" href="#">{{ buttonText }}</a>
           </div>
           <img [src]="imageUrl" alt="Obrazek sekcji">
-
         </div>
       </div>
     </div>

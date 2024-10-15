@@ -14,13 +14,12 @@ export class PrezentacjaStronaStrefaRodzicaComponent {
     'Poduszka i kocyk'
   ];
 
-  // Cennik
-  cennik: string = `
-    Poznaj czesne – zadzwoń: +48 730 012 254
-    Zniżka dla rodzeństwa 10%
-    Stawka dzienna za wyżywienie – 20 zł
-    W ramach czesnego oferujemy: dwujęzyczność metodą immersji językowej, autorski program rozwoju inteligencji emocjonalnej...
-  `;
+  cennik: string[] = [
+    'Poznaj czesne – zadzwoń: +48 730 012 254',
+    'Zniżka dla rodzeństwa 10%',
+    'Stawka dzienna za wyżywienie – 20 zł',
+    'W ramach czesnego oferujemy: dwujęzyczność metodą immersji językowej, autorski program rozwoju inteligencji emocjonalnej...'
+  ];
 
   // Lista zasad przyprowadzania dziecka
   przyprowadzanie: string[] = [

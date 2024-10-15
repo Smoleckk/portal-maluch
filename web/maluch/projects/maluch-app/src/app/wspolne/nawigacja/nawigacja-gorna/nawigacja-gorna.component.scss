@@ -22,8 +22,13 @@
 .brand-title {
   font-size: 1.8rem;
   margin: 0.5rem;
-  color: #0A303A; /* Golden color for the brand name */
   font-weight: bold;
+
+    a{
+      text-decoration: none;
+      color: #0A303A; /* Golden color for the brand name */
+      font-weight: bold;
+    }
 }
 
 /* Navbar Links */
