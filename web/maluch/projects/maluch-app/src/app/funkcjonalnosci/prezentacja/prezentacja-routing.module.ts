@@ -12,6 +12,9 @@ import {
 import {
   PrezentacjaStonaPlacowkiSzczegolyComponent
 } from "./strony/prezentacja-stona-placowki-szczegoly/prezentacja-stona-placowki-szczegoly.component";
+import {
+  PrezentacjaStronaStrefaRodzicaComponent
+} from "./strony/prezentacja-strona-strefa-rodzica/prezentacja-strona-strefa-rodzica.component";
 
 const routes: Routes = [{
   path: '',
@@ -32,6 +35,9 @@ const routes: Routes = [{
   },{
     path: 'placowki/:id',
     component: PrezentacjaStonaPlacowkiSzczegolyComponent
+  },{
+    path: 'strefa-rodzica',
+    component: PrezentacjaStronaStrefaRodzicaComponent
   }];
 
 @NgModule({

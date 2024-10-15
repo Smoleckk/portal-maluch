@@ -14,6 +14,7 @@ import { StronaDokumentyComponent } from './strony/strona-dokumenty/strona-dokum
 import { PrezentacjaStronaONasComponent } from './strony/prezentacja-strona-o-nas/prezentacja-strona-o-nas.component';
 import { PrezentacjaStronaPlacowkiComponent } from './strony/prezentacja-strona-placowki/prezentacja-strona-placowki.component';
 import { PrezentacjaStonaPlacowkiSzczegolyComponent } from './strony/prezentacja-stona-placowki-szczegoly/prezentacja-stona-placowki-szczegoly.component';
+import { PrezentacjaStronaStrefaRodzicaComponent } from './strony/prezentacja-strona-strefa-rodzica/prezentacja-strona-strefa-rodzica.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { PrezentacjaStonaPlacowkiSzczegolyComponent } from './strony/prezentacja
         PrezentacjaStronaONasComponent,
         PrezentacjaStronaPlacowkiComponent,
         PrezentacjaStonaPlacowkiSzczegolyComponent,
+        PrezentacjaStronaStrefaRodzicaComponent,
     ],
     exports: [
         FooterComponent

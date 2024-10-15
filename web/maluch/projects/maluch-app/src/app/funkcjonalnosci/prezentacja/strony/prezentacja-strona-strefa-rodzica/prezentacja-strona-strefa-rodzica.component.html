@@ -1,0 +1,35 @@
+<app-sub-header header="Strefa rodzica"
+                tekst="Strefa rodzica lorem ipsum"></app-sub-header>
+
+
+<section class="strefa-rodzica">
+  <div class="container">
+    <!-- Wyprawka Section -->
+    <h1>Wyprawka</h1>
+    <ul>
+      <li *ngFor="let item of wyprawka">{{ item }}</li>
+    </ul>
+
+    <!-- Cennik Section -->
+    <h1>Cennik</h1>
+    <p>{{ cennik }}</p>
+    <!-- Posilki Section -->
+    <h1>Posiłki</h1>
+    <ul>
+      <li *ngFor="let posilek of posilki">{{ posilek }}</li>
+    </ul>
+    <!-- Przyprowadzanie Dziecka Section -->
+    <h1>Przyprowadzanie dziecka do Przedszkola</h1>
+    <ul>
+      <li *ngFor="let item of przyprowadzanie">{{ item }}</li>
+    </ul>
+
+    <!-- Odbiór Dziecka Section -->
+    <h1>Odbiór dziecka z Przedszkola</h1>
+    <ul>
+      <li *ngFor="let item of odbior">{{ item }}</li>
+    </ul>
+
+  </div>
+
+</section>
