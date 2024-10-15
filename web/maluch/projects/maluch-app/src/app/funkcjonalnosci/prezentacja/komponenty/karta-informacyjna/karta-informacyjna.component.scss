@@ -1,0 +1,71 @@
+// Variables for color palette
+$primary-color: #0A303A;
+$accent-color: #f1c40f;
+$text-color: #333;
+$background-color: #fff;
+$highlight-color: #f39c12;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
+.karta-sekcja {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+
+}
+
+.float-layout {
+  padding: 5px 5px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.karta-kontent {
+  overflow: hidden;
+}
+
+.karta {
+  max-width: 700px;
+  background-color: $background-color;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.karta-obrazek {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.karta-obrazek img {
+  width: 50%;
+  height: 400px;
+  max-width: 650px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  div.karta-obrazek img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-image-left {
+    flex-direction: column;
+  }
+  .card-image-right {
+    flex-direction: column-reverse;
+  }
+
+  .karta {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
