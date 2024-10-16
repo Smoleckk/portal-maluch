@@ -33,4 +33,5 @@ export class PrezentacjaStronaGlownaComponent {
     'W naszej placówce dbamy o indywidualny rozwój każdego dziecka, a nauczyciele współpracują z rodzicami, aby jak najlepiej wspierać ich pociechy',
     'Zespół nauczycieli współpracuje ze specjalistami, takimi jak logopedzi i psychologowie, aby zagwarantować wsparcie dzieciom z różnorodnymi potrzebami'
   ];
+  str ='assets/gimnastyka.svg';
 }
