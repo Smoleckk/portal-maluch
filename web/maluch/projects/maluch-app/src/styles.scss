@@ -31,14 +31,11 @@ html, body {
   width: 80%;
   max-width: 1260px;
   margin: 0 auto;
-}
 
-@media (max-width: 800px) {
-  .container {
+  @media (max-width: 800px) {
     width: 95%;
   }
 }
-
 
 .btn {
   display: inline-block;
@@ -53,14 +50,14 @@ html, body {
     color: var(--background-color);
 
     &:hover {
-      background-color:   var(--accent-color);
+      background-color: var(--accent-color);
       color: var(--primary-color);
       transform: translateY(-2px);
     }
   }
 
   &-dark {
-    background-color:   var(--accent-color);
+    background-color: var(--accent-color);
     color: var(--background-color);
 
     &:hover {
@@ -71,23 +68,22 @@ html, body {
   }
 }
 
-// Icon styles
 .icon {
   font-size: 40px;
-  color:   var(--accent-color);
+  color: var(--accent-color);
   margin-bottom: 10px;
 }
 
 h1 {
   font-size: 42px;
   color: var(--primary-color);
+  margin-bottom: 20px;
 }
 
 h2 {
   font-size: 28px;
   margin-bottom: 20px;
-  color:   var(--accent-color);
-
+  color: var(--accent-color);
 }
 
 h3 {
@@ -95,16 +91,11 @@ h3 {
   color: var(--primary-color);
   margin-bottom: 20px;
 }
+
 p {
   font-size: 18px;
   margin: 20px auto;
   line-height: 1.6;
-  color: var(--primary-color);
-}
-
-
-ul {
-  margin: 20px auto;
   color: var(--primary-color);
 }
 
@@ -116,21 +107,34 @@ ul {
 
   li {
     margin-bottom: 10px;
-    font-size: 1.2rem;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 800px) {
   h1 {
-    font-size: 36px;
+    font-size: 28px;
   }
 
   h2 {
     font-size: 22px;
   }
 
+  h3 {
+    font-size: 20px;
+  }
+
   p {
     font-size: 16px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 10px 20px;
   }
 }
 
