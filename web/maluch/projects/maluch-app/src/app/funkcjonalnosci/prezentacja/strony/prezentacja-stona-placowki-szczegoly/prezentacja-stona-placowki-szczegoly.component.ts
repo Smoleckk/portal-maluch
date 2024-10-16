@@ -16,7 +16,7 @@ export class PrezentacjaStonaPlacowkiSzczegolyComponent implements OnInit {
     opis: 'Gwiazdeczka to placówka, w której każde dziecko może rozwijać swoje talenty w przyjaznej atmosferze. Nasza kadra pedagogiczna posiada odpowiednie kwalifikacje oraz doświadczenie, co pozwala nam zapewnić dzieciom najwyższy poziom opieki.',
     opisPelny: 'Przedszkole i Żłobek Gwiazdeczka oferuje kompleksową opiekę oraz edukację najmłodszych dzieci. Nasze zajęcia są dostosowane do potrzeb i możliwości rozwojowych dzieci. Dbamy o to, aby każde dziecko czuło się u nas bezpiecznie i komfortowo. Nasi doświadczeni nauczyciele wspierają rozwój dzieci poprzez zabawę, kreatywne zajęcia i różnorodne aktywności. U nas znajdziesz przestronny ogród, w którym dzieci mogą bawić się na świeżym powietrzu, a także nowoczesne sale dydaktyczne, które stymulują ich rozwój. Oferujemy bogaty program edukacyjny, w tym naukę języka angielskiego oraz różnorodne zajęcia artystyczne i ruchowe. Nasze podejście opiera się na indywidualnym podejściu do każdego dziecka, co sprzyja jego rozwojowi i samodzielności.',
     dlaczegoWarto: 'Wybierając przedszkole i żłobek Gwiazdeczka, zyskują Państwo pewność, że dzieci są pod opieką wykwalifikowanej kadry. Oferujemy bogaty program edukacyjny, który rozwija ich umiejętności i pasje. Nasze placówki są dobrze wyposażone w materiały dydaktyczne, a nauczyciele stosują nowoczesne metody nauczania, co sprawia, że nauka jest przyjemnością. Dodatkowo, organizujemy różnorodne wydarzenia, które angażują rodziców oraz rozwijają umiejętności społeczne dzieci.',
-    zdjecie: '/assets/szkola.jpg',
+    zdjecie: 'assets/szkola.jpg',
     frame: 'https://www.google.com/maps/embed?pb=...',
     link: '/placowki/1'
   }];
