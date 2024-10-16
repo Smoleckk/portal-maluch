@@ -7,6 +7,14 @@ $highlight-color: #f39c12;
 $shadow-color: rgba(0, 0, 0, 0.1);
 $shadow-hover-color: rgba(0, 0, 0, 0.2);
 
+//:root {
+//  --primary-color: #3498db; /* Example primary color */
+//  --secondary-color: #2ecc71; /* Example secondary color */
+//  --accent-color: #e74c3c; /* Example accent color */
+//  --background-color: #ecf0f1; /* Example background color */
+//  $text-color: red; /* Example text color */
+//}
+
 html, body {
   height: 100%;
   margin: 0;
@@ -28,6 +36,9 @@ html, body {
   width: 80%;
   max-width: 1260px;
   margin: 0 auto;
+  //background-color: $shadow-hover-color;
+  //background-color: var(--text-color);
+
 }
 
 @media (max-width: 800px) {
