@@ -11,6 +11,17 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: end;
 
+  h1 {
+    font-size: 80px;
+  }
+
+  p {
+    font-weight: 500;
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
   .sub-header-content {
     display: flex;
     justify-content: center;
@@ -43,6 +54,10 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     min-height: 30vh;
     align-items: center;
     padding-top: 100px;
+
+    h1 {
+      font-size: 38px;
+    }
 
       .sub-header-content {
         flex-direction: column;

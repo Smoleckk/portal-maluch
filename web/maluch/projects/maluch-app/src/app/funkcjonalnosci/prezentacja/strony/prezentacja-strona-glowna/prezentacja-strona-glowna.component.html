@@ -3,9 +3,12 @@
 
 <section class="powitanie">
   <div class="container">
+    <h1>Prywatne przedszkole i żłobek Gwiazdeczka – Twoje dziecko w bezpiecznych rękach!</h1>
     <div class="wiersze">
       <div class="kolumna-lewa">
-        <h1>Witamy w Przedszkolu Gwiazdeczka</h1>
+        <div class="powitanie-img">
+          <img alt="bird" class="bird" src="/assets/star.svg">
+        </div>
       </div>
       <div class="kolumna-prawa">
         <p>Każde dziecko, które do nas przychodzi, jest dla nas wyjątkowe. Naszym celem jest zapewnienie mu poczucia
@@ -20,22 +23,22 @@
 
 
 <app-karta-informacyjna
-  [title]="'Dlaczego My?'"
-  [contentList]="dlaczegoMy"
-  [description]="'Posiadamy wieloletnie doświadczenie w opiece nad dziećmi.'"
   [buttonText]="'Więcej informacji o nas'"
-  [imageUrl]="'assets/zabawa.jpg'"
-  [zdjeciePoLewej]=true
+  [contentList]="dlaczegoMy"
   [czyPrzycisk]=true
+  [description]="'Posiadamy wieloletnie doświadczenie w opiece nad dziećmi.'"
+  [imageUrl]="'assets/zabawa.jpg'"
+  [title]="'Dlaczego My?'"
+  [zdjeciePoLewej]=true
 >
 </app-karta-informacyjna>
 
 <app-karta-informacyjna
-  [title]="'Kadra Pedagogiczna'"
+  [buttonText]="'Więcej informacji o nauczycielach'"
   [contentList]="kadraPedagogiczna"
   [description]="'Nasi nauczyciele wspierają rozwój dzieci w każdym aspekcie.'"
-  [buttonText]="'Więcej informacji o nauczycielach'"
   [imageUrl]="'assets/kadra.jpg'"
+  [title]="'Kadra Pedagogiczna'"
   [zdjeciePoPrawej]=true>
 </app-karta-informacyjna>
 
@@ -59,7 +62,11 @@
       <div class="kolumna-prawa">
         <div class="wiersz-kursu">
           <div class="obrazek-kursu">
+            <a href="/o-nas">
+
             <img alt="ogród" src="/assets/ogrod.svg">
+            </a>
+
             <h3>Ogród i odpoczynek</h3>
           </div>
           <div class="obrazek-kursu">

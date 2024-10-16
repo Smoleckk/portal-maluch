@@ -33,11 +33,22 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
   padding: 60px 0;
   background-color: #f9f9f9;
 
+  img {
+    width: 250px;
+    height: 250px;
+  }
   .kolumna-prawa {
     width: 50%;
   }
 }
+@media (max-width: 800px) {
+  .powitanie {
+    .powitanie-img {
+      display: none;
+    }
+  }
 
+}
 
 ////rozwoj
 .rozwoj {
@@ -58,10 +69,17 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
     img {
       width: 180px;
       height: 180px;
+      transition: transform 0.2s ease;
+
     }
 
     .obrazek-kursu {
       padding: 20px;
+
+      img:hover {
+        animation: shake 0.5s;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -74,8 +92,8 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
       width: 100%;
 
       img {
-        width: 280px;
-        height: 280px;
+        width: 200px;
+        height: 230px;
       }
     }
   }
