@@ -1,10 +1,5 @@
 // Variables for color palette
-$primary-color: #0A303A;
- $accent-color: #f7b948;
-$background-color: #fff;
-$highlight-color: #f39c12;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
 .header {
   min-height: 60vh;
   background: linear-gradient(to bottom right, rgba(10, 48, 58, 0.5), rgba(10, 48, 58, 0.5)),
@@ -20,7 +15,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
       color: #fff;
       margin-bottom: 20px;
       span{
-        color: $accent-color !important;
+        color:   var(--accent-color) !important;
       }
     }
 

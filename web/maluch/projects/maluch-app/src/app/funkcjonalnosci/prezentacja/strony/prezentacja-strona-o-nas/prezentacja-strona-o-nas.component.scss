@@ -1,9 +1,5 @@
-$primary-color: #0A303A;
- $accent-color: #f7b948;
-$background-color: #fff;
-$highlight-color: #f39c12;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
+
 
 
 .wiersze {
@@ -31,7 +27,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 // Welcome section
 .o-nas {
   padding: 60px 0;
-  background: $background-color;
+  background: var(--background-color);
 
   .kolumna-prawa {
     display: flex;

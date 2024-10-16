@@ -1,13 +1,9 @@
 // Variables for color palette
-$primary-color: #0A303A;
- $accent-color: #f7b948;
-$background-color: #fff;
-$highlight-color: #f39c12;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
+
 
 
 .strefa-rodzica {
   padding: 40px 0;
-  background-color: $background-color;
+  background-color: var(--background-color);
 }

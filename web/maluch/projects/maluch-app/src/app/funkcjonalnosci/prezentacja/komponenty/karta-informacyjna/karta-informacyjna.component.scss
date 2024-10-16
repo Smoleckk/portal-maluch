@@ -1,10 +1,6 @@
 // Variables for color palette
-$primary-color: #0A303A;
- $accent-color: #f7b948;
-$background-color: #fff;
-$highlight-color: #f39c12;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
+
 
 .karta-sekcja {
   padding: 10px 0;
@@ -30,7 +26,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 .karta {
   width: 700px;
   min-height: 600px;
-  background-color: $background-color;
+  background-color: var(--background-color);
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);

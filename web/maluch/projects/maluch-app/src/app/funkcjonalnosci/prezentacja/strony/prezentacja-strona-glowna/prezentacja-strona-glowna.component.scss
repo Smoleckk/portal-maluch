@@ -1,10 +1,3 @@
-// Variables for color palette
-$primary-color: #0A303A;
- $accent-color: #f7b948;
-$background-color: #fff;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$shadow-hover-color: rgba(0, 0, 0, 0.2);
-
 //@import "../../../../../styles.scss";
 .wiersze {
   display: flex;
@@ -53,7 +46,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 ////rozwoj
 .rozwoj {
   padding: 120px 0;
-  background-color: $background-color;
+  background-color: var(--background-color);
   //text-align: center;
 
   .kolumna-lewa, .kolumna-prawa {
@@ -103,7 +96,7 @@ $shadow-hover-color: rgba(0, 0, 0, 0.2);
 .rekrutacja {
   padding: 150px 0;
   text-align: center;
-  background: $background-color;
+  background: var(--background-color);
 
   .rekrutacja-kontent {
     max-width: 800px;

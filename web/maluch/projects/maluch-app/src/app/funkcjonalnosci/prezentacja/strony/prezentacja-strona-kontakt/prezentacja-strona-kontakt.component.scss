@@ -1,14 +1,10 @@
-$primary-color: #0A303A;
- $accent-color: #f7b948;
-$background-color: #fff;
-$highlight-color: #f39c12;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$shadow-hover-color: rgba(0, 0, 0, 0.2);
+
+
 
 
 .kontakt {
   padding: 30px 0;
-  background-color: $background-color;
+  background-color: var(--background-color);
 }
 
 .kontakt-details {
