@@ -10,7 +10,7 @@
               <li *ngFor="let item of contentList">{{ item }}</li>
             </ul>
             <p *ngIf="description">{{ description }}</p>
-            <a *ngIf="czyPrzycisk"  class="btn btn-light" href="#">{{ buttonText }}</a>
+            <a *ngIf="czyPrzycisk"  class="btn btn-light" routerLink="/">{{ buttonText }}</a>
           </div>
         </div>
       </div>
@@ -29,7 +29,7 @@
               <li *ngFor="let item of contentList">{{ item }}</li>
             </ul>
             <p *ngIf="description">{{ description }}</p>
-            <a *ngIf="czyPrzycisk"  class="btn btn-light" href="#">{{ buttonText }}</a>
+            <a *ngIf="czyPrzycisk"  class="btn btn-light" routerLink="/">{{ buttonText }}</a>
           </div>
           <img [src]="imageUrl" alt="Obrazek sekcji">
         </div>
