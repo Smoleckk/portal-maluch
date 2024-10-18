@@ -1,11 +1,8 @@
-//@import "../../../../../styles.scss";
 .wiersze {
   display: flex;
-  //justify-content: center;
   margin: 0 auto;
 
   .kolumna-lewa, .kolumna-prawa {
-    //padding: 0 20px;
     width: 50%;
   }
 }
@@ -21,19 +18,29 @@
 
 }
 
-////powitanie
 .powitanie {
-  padding: 50px 0 50px 0;
+  padding: 100px 0 100px 0;
   background-color: #f9f9f9;
 
   img {
     width: 250px;
     height: 250px;
   }
+
+  .kolumna-lewa {
+    display: flex;
+    align-items: center;
+    span{
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+  }
+
   .kolumna-prawa {
     width: 50%;
   }
 }
+
 @media (max-width: 800px) {
   .powitanie {
     .powitanie-img {
@@ -43,11 +50,9 @@
 
 }
 
-////rozwoj
 .rozwoj {
-  padding: 50px 0 50px 0;
+  padding: 100px 0 100px 0;
   background-color: var(--background-color);
-  //text-align: center;
 
   .kolumna-lewa, .kolumna-prawa {
     text-align: left;
@@ -92,9 +97,8 @@
   }
 }
 
-// rekrutacja
 .rekrutacja {
-  padding: 50px 0 50px 0;
+  padding: 100px 0 100px 0;
   text-align: center;
   background: var(--background-color);
 

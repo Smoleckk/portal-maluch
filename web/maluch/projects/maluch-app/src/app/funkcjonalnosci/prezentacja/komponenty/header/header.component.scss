@@ -6,41 +6,44 @@
   url("../../../../../assets/banner.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
+  margin: 0 auto;
 
   .text-box {
     margin: 120px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 
     h1 {
       font-size: 80px;
       color: #fff;
-      margin-bottom: 20px;
-      span{
-        color:   var(--accent-color) !important;
+      margin: 0;
+      font-weight: 600;
+      span {
+        color: var(--accent-color) !important;
       }
     }
 
     .text-content {
-      max-width: 600px;
-
+      max-width: 900px;
       p {
-        font-weight: 500;
         color: #fff;
         font-size: 20px;
-        margin-bottom: 20px;
       }
-
-
+      a{
+        margin: 0 10px;
+      }
     }
   }
 }
 
 @media (max-width: 800px) {
   .header {
-    min-height: 50vh;
-
+    min-height: 70vh;
 
     .text-box {
-
       h1 {
         font-size: 38px;
       }
