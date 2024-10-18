@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {SzablonGlownyComponent} from './wspolne/szablony/szablon-glownwy/szablon-glowny.component';
 import {NawigacjaModule} from "./wspolne/nawigacja/nawigacja.module";
 import {PrezentacjaModule} from "./funkcjonalnosci/prezentacja/prezentacja.module";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import {PrezentacjaModule} from "./funkcjonalnosci/prezentacja/prezentacja.modul
         AppRoutingModule,
         NawigacjaModule,
         PrezentacjaModule,
+      BrowserAnimationsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
